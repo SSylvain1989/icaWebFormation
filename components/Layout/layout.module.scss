@@ -11,10 +11,16 @@
 
 .header{ // tout le header
   border: grey 5px solid;
+  &__h2{
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: vars.$text-purple;
+  }
   .container{ // juste le container du haut sans contact
     border: red 1px solid;
     display: flex;
     flex-direction: row;
+    height: 10.5rem;
     &__wrapper{
       display: flex;
       flex-direction: row;
@@ -33,14 +39,31 @@
       color: vars.$text-purple;
       font-size: 1.5rem;
       font-weight: 700;
-      margin: 1.5rem 1rem 0rem 0rem;
+      margin: 1.5rem 1rem 0rem 10rem;
+      height: 9rem;
     }
   }
   .contact{ // partie basse du header
-    margin: 0.2rem 1rem 1.5rem 6rem;
+    margin: 0.2rem 1rem 1.5rem 5rem;
     display: flex;
     flex-direction: column;
     color: vars.$text-purple;
+    font-weight: 700;
+  }
+  img{
+    margin-top: 1rem;
+    width: 85px;
+    height: 100px;
+    border: red solid 1px;
+  }
+  nav{
+    text-align: center;
+    padding: 0.1rem;
+  }
+  .navlink{
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
+
 

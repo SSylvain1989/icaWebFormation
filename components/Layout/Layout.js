@@ -25,7 +25,7 @@ export default function Layout({ children, page }) {
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.container__wrapper}>
-            <img className={styles.logo} src="/ica-logo.png" alt="ica-logo" width="90" height="60"  />
+            <img className={styles.logo} src="/ica-logo.png" alt="ica-logo" />
             <h1 className={styles.container__title}>ICA WebFormation</h1>
           </div>
           <div className={styles.container__keyWord}>
@@ -38,7 +38,7 @@ export default function Layout({ children, page }) {
           <a href="tel:+33644073309">+33 6 44 07 33 09</a>
           <a href="mailto:p.sigonnez@hotmail.fr" className="pt-2">contact@icawebformation.fr</a>
         </div>
-          <h2>Formation à distance avec formateur en ligne</h2>
+          <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
         {/* *** nav *** */}
         <nav>
           <Link href="/">
