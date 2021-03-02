@@ -1,0 +1,46 @@
+@use '/styles/vars';
+
+
+.layoutContainer{
+  border: green solid 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rem;
+  margin-right: 30rem;
+}
+
+.header{ // tout le header
+  border: grey 5px solid;
+  .container{ // juste le container du haut sans contact
+    border: red 1px solid;
+    display: flex;
+    flex-direction: row;
+    &__wrapper{
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+      border: green 1px solid;
+      height: fit-content;
+      margin: 2rem 1rem 6rem 1rem;
+    }&__title{
+      border: green 3px solid;
+      margin: 2rem 1rem 2rem 0rem;
+      font-size: 3rem;
+      font-weight: 700;
+      color: vars.$text-purple;
+    }&__keyWord{
+      border: hotpink 2px solid;
+      color: vars.$text-purple;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 1.5rem 1rem 0rem 0rem;
+    }
+  }
+  .contact{ // partie basse du header
+    margin: 0.2rem 1rem 1.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    color: vars.$text-purple;
+  }
+}
+
