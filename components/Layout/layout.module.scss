@@ -10,7 +10,6 @@
 }
 
 .header{ // tout le header
-  border: grey 5px solid;
   &__h2{
   text-align: center;
   margin-bottom: 3.5rem;
@@ -57,13 +56,26 @@
     border: red solid 1px;
   }
   nav{
+    width: 100%;
+    max-width: 100%;
     text-align: center;
     padding: 0.1rem;
+    border-bottom: vars.$text-purple 1px solid;
+    .navlink{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      color: vars.$text-purple;
+      font-size: 1.5rem;
+      padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+    }
+    .navlink:hover{
+      outline: 0px vars.$text-purple solid;
+      border-radius: 5px 5px 0px 0px;
+      background-color: vars.$text-purple;
+      color: honeydew;
+    }
   }
-  .navlink{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+
 }
 
 
