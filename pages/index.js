@@ -8,25 +8,12 @@ import {useState, useEffect } from "react";
 
 
 export default function Home () {
-  // const [ instrumentation, setInstrumentation ] = useState('');
-  // const [ regulation, setRegulation] = useState('');
-  // const [ atex, setAtex] = useState('');
+
   const [isShown, setIsShown] = useState('');
-
-
-  // console.log('regulation',regulation);
-  // console.log('atex',atex);
-  // console.log('instrumentation',instrumentation);
-
-  // useEffect(()=> {
-  //   setInstrumentation('one')
-  // },[])
 
   useEffect(() => {
     setIsShown('Instrumentation');
   }, []);
-
-
 
   return(
     <div>
@@ -48,15 +35,32 @@ export default function Home () {
           <br/>
           <section><h2 className={styles.subtitle}>Nous proposons trois types de formations :</h2>
             <article>
-              <div><p  onMouseEnter={() => setIsShown('Instrumentation')}
-                              onMouseLeave={() => setIsShown('Instrumentation')}>Instrumentation</p>
-              <p onMouseEnter={() => setIsShown('Regulation')}
-                    onMouseLeave={() => setIsShown('Regulation')}>Regulation</p>
-              <p onMouseEnter={() => setIsShown('ATEX')}
-                    onMouseLeave={() => setIsShown('ATEX')}>ATEX</p></div>
-              {isShown === "Instrumentation" && (
-              <div>Instrumentation à true</div>)}
-               {isShown === "Regulation" && (
+              <div>
+                <p onMouseEnter={() => setIsShown('Instrumentation')}
+                      onMouseLeave={() => setIsShown('Instrumentation')}>Instrumentation</p>
+                <p onMouseEnter={() => setIsShown('Regulation')}
+                      onMouseLeave={() => setIsShown('Regulation')}>Regulation</p>
+                <p onMouseEnter={() => setIsShown('ATEX')}
+                      onMouseLeave={() => setIsShown('ATEX')}>ATEX</p>
+              </div>
+                {isShown === "Instrumentation" && (
+                  <div>
+                    <table className={styles.table}>
+                      <tr className={styles.tr}>
+                        <th className={styles.th}>Data 1</th>
+                        <th className={styles.th}>Data 2</th>
+                        </tr>
+                        <tr>
+                        <td className={styles.td}>Knocky</td>
+                        <td className={styles.td}>Florida</td>
+                      </tr>
+                      <tr className={styles.tr}>
+                        <td className={styles.td}>Knocky</td>
+                        <td className={styles.td}>Florida</td>
+                      </tr>
+                    </table>
+                  </div>)}
+                {isShown === "Regulation" && (
               <div>regulation à true</div>)}
                             {isShown === "ATEX" && (
               <div>ATEX à true</div>)}
