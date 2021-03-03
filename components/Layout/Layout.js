@@ -36,7 +36,7 @@ export default function Layout({ children, page }) {
         </div>
         <div className={styles.contact}>
           <a href="tel:+33644073309">+33 6 44 07 33 09</a>
-          <a href="mailto:p.sigonnez@hotmail.fr" className="pt-2">contact@icawebformation.fr</a>
+          <a href="mailto:p.sigonnez@hotmail.fr" >contact@icawebformation.fr</a>
         </div>
           <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
         {/* *** nav *** */}
@@ -144,7 +144,7 @@ export default function Layout({ children, page }) {
             </li>
           </ul>
           {/* div footer_network */}
-          <div className={styles.social}>
+          {/* <div className={styles.social}>
             <span>Suivez-nous</span>
             <ul>
             <li>
@@ -162,7 +162,7 @@ export default function Layout({ children, page }) {
               </Link>
             </li>
             </ul>
-          </div>
+          </div> */}
       </footer>
     </div>
   );

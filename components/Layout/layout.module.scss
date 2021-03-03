@@ -2,80 +2,139 @@
 
 
 .layoutContainer{
-  border: green solid 5px;
+  // border: green solid 5px;
   display: flex;
   flex-direction: column;
   margin-left: 30rem;
   margin-right: 30rem;
-}
-
-.header{ // tout le header
-  &__h2{
-  text-align: center;
-  margin-bottom: 3.5rem;
-  color: vars.$text-purple;
-  }
-  .container{ // juste le container du haut sans contact
-    border: red 1px solid;
-    display: flex;
-    flex-direction: row;
-    height: 10.5rem;
-    &__wrapper{
+  .header{ // tout le header
+    &__h2{
+    text-align: center;
+    margin-bottom: 3.5rem;
+    color: vars.$text-purple;
+    }
+    .container{ // juste le container du haut sans contact
+      // border: red 1px solid;
       display: flex;
       flex-direction: row;
-      width: 60%;
-      border: green 1px solid;
-      height: fit-content;
-      margin: 2rem 1rem 6rem 1rem;
-    }&__title{
-      border: green 3px solid;
-      margin: 2rem 1rem 2rem 0rem;
-      font-size: 3rem;
+      height: 9.5rem;
+      &__wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        // border: green 1px solid;
+        height: fit-content;
+        margin: 2rem 1rem 6rem 1rem;
+      }&__title{
+        // border: green 3px solid;
+        margin: 2rem 1rem 1.5rem 0rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: vars.$text-purple;
+      }&__keyWord{
+        color: vars.$text-purple;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 1.5rem 1rem 0rem 10rem;
+        height: 9rem;
+      }
+    }
+    .contact{ // partie basse du header
+      margin: 0.2rem 1rem 1.5rem 7rem;
+      display: flex;
+      flex-direction: column;
+      color: vars.$text-purple;
       font-weight: 700;
-      color: vars.$text-purple;
-    }&__keyWord{
-      border: hotpink 2px solid;
-      color: vars.$text-purple;
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin: 1.5rem 1rem 0rem 10rem;
-      height: 9rem;
+      a{
+        font-weight: bold;
+        text-decoration: none;
+        color: vars.$text-purple;
+        width: fit-content;
+      }
+      a:hover{
+        border-bottom: vars.$text-purple solid 1px;
+      }
+    }
+    img{
+      margin-top: 1rem;
+      width: 85px;
+      height: 100px;
+    }
+    nav{
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 0.1rem;
+      border-bottom: grey 3px solid;
+      .navlink{
+        text-decoration: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: vars.$text-purple;
+        font-size: 1.5rem;
+        padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+      }
+      .navlink:hover{
+        outline: 0px vars.$text-purple solid;
+        border-radius: 5px 5px 0px 0px;
+        background-color: vars.$text-purple;
+        color: honeydew;
+      }
     }
   }
-  .contact{ // partie basse du header
-    margin: 0.2rem 1rem 1.5rem 5rem;
-    display: flex;
-    flex-direction: column;
-    color: vars.$text-purple;
-    font-weight: 700;
-  }
-  img{
-    margin-top: 1rem;
-    width: 85px;
-    height: 100px;
-    border: red solid 1px;
-  }
-  nav{
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 0.1rem;
-    border-bottom: vars.$text-purple 1px solid;
-    .navlink{
-      margin-left: 1rem;
-      margin-right: 1rem;
-      color: vars.$text-purple;
-      font-size: 1.5rem;
-      padding: 0.4rem 0.4rem 0.1rem 0.4rem;
-    }
-    .navlink:hover{
-      outline: 0px vars.$text-purple solid;
-      border-radius: 5px 5px 0px 0px;
-      background-color: vars.$text-purple;
-      color: honeydew;
-    }
-  }
-
+//****main****//
+main{
+  padding:2rem
 }
+  //****footer****//
+  .footerContainer{
+    padding: 0rem 5rem;
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    .about{
+      padding-top: 1.1rem;
+      width: 48%;
+      text-align: center;
+      font-weight: bold;
+      color: vars.$text-purple;
+      &__text{
+        font-weight: normal;
+      }&__link{
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      &__link:hover{
+        border-bottom: vars.$text-purple solid 1px;
+      }
+      a{
+        font-weight: bold;
+        text-decoration: none;
+        color: vars.$text-purple;
+      }
+      a:hover{
+        border-bottom: vars.$text-purple solid 1px;
+      }
+    }
+    .map{
+      width: 48%;
+      line-height: 1.8rem;
+      text-align: center;
+      list-style: none;
+      font-weight: bold;
+      a{
+        text-decoration: none;
+        color: vars.$text-purple;
+      }
+      a:hover{
+        border-bottom: vars.$text-purple solid 1px;
+      }
+    }
+  }
+}
+
 
 
