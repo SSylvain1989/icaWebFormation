@@ -9,7 +9,7 @@ import Head from "next/head";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import Image from "next/image";
-import styles from './Layout.module.scss';
+import styles from './layout.module.scss';
 
 
 export default function Layout({ children, page }) {
