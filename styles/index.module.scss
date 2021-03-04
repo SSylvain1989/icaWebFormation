@@ -1,3 +1,5 @@
+@use '/styles/vars';
+
 .img{
 border-radius: 5px;
 }
@@ -6,9 +8,29 @@ border-radius: 5px;
   padding:0.8rem;
 }
 
+.sectionMain{
+  margin: 5rem auto 2rem auto;
+  &__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    div{
+      border: 1px vars.$text-purple solid;
+      border-radius: 5px;
+      padding: 0.5rem;
+      background-color: vars.$text-purple;
+      color: honeydew;
+      width: 15rem;
+      text-align: center;
+    }
+  }
+}
 .subtitle{
   width: fit-content;
-  margin: 5rem auto 3rem auto;
+  margin: 6rem auto 3rem auto;
   border-bottom: 1px black solid;
 }
 
