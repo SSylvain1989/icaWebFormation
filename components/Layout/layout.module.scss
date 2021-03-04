@@ -147,15 +147,27 @@ main{
 
 // tablette 
 @media(min-width: 1024px) and (max-width: 1388px){
+  .layoutContainer{
+    margin-left: 17rem;
+    margin-right: 17rem;
+    }
 
 }
 @media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
 {
+  .layoutContainer{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    }
 
 }
 
 @media(min-width: 540px) and (max-width: 766px) // test sur surface duo FINI
  {
+  .layoutContainer{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    }
  }
 
 
