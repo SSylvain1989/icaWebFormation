@@ -3,6 +3,9 @@ import { html } from "gridjs";
 import "gridjs/dist/theme/mermaid.css";
 import styles from './formations.module.scss';
 
+//==import pdf
+// import baseDeLinstrumentation from '../../public/Bases_de_instrumentation.jpg'
+
 
 export default function Formations ({data, typeFormation}) {
 console.log(data);
