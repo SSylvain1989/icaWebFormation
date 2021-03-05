@@ -4,7 +4,14 @@ import "gridjs/dist/theme/mermaid.css";
 import styles from './formations.module.scss';
 
 //==import pdf
-// import baseDeLinstrumentation from '../../public/Bases_de_instrumentation.jpg'
+import learning1 from '../../public/base.pdf';
+import moncv from '../../public/cv_sylvain_sigonnez.pdf';
+import quisommes from '../../public/quisommesnous1.jpeg';
+import test from '../../public/ica-logo.png';
+// import test from '../../public/ica-logo.png';
+
+
+
 
 
 export default function Formations ({data, typeFormation}) {
@@ -18,6 +25,14 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation', typeFormatio
 
   return(  
   <div className={styles.formations}>
+      <a className="cv" href={moncv} download="cv sylvain sigonnez">pdf</a>
+      <br/>
+      <a className="cv" href={quisommes} download="photojpeg">jpeg</a>
+      <br/>
+
+      <a className="cv" href={test} download="photopng">png</a>
+
+
 
   <Grid
   data={data}

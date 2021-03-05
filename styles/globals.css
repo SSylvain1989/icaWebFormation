@@ -29,7 +29,7 @@ h2{
 }
 h3{
 font-style: normal;
-font-size: 3em;
+font-size: 1.3em;
 font-weight: 700;
 
 }
@@ -37,6 +37,11 @@ p{
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   line-height: 1.6;
+}
+li{
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  line-height: 0.4rem;
 }
 
 * {
