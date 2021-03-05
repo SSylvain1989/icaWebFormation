@@ -25,11 +25,19 @@ const text = "/pdf/cv_sylvain_sigonnez.pdf";
   return(  
   <div className={styles.formations}>
       <a  href={text} target="_blank" download="quisommesnous">pdf</a>
+      <br/>
       <a  href={moncv} target="_blank" download="quisommesnous">pdf</a>
       <br/>
       <a  href="/pdf/Les responsabilités en ATEX.pdf" download="photojpeg">jpeg</a>
       <br/>
-
+      <a  href="/pdf/cv_sylvain_sigonnez.pdf" download="cv_sylvain_sigonnez">telecharger cv</a>
+      <br/>
+      <a  href="/pdf/cv_sylvain_sigonnez.pdf" target='_blank' >voir cv</a>
+      <br/>
+      <a  href="/pdf/cvsylvain.pdf" download="cv_sylvain_sigonnez">telecharger cv tout collé</a>
+      <br/>
+      <a  href="/pdf/cvsylvain.pdf" target='_blank' >voir cv tout collé</a>
+      <br/>
       <a  href="/images/ica-logo.png" download="photopng">png</a>
 
 

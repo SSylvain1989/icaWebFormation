@@ -1,5 +1,5 @@
 const atex = [
-  ['Adaptée', 'Adaptée','Adaptée','Les responsabilités en ATEX','1 jour ! (7h30)','2 x 3h + 1 x 1h30'],
+  ['Adaptée', 'Adaptée','Adaptée','cv_sylvain_sigonnez','1 jour ! (7h30)','2 x 3h + 1 x 1h30'],
   ['Adaptée','Adaptée','Adaptée', 'ATEX Niveau 0 * ','3 jours (22h30)','7 x 3h + 1 x 1h30'],
   ['Inadaptée','Adaptée','Inadaptée', 'ATEX Niveau 1 * ','2 jours (15h)','5 x 3h'],
   ['Adaptée', 'Adaptée','Préconisée','ISM-ATEX N2E (ATEX Niveau 2 Électrique) *','1 jour ! (7h30)','2 x 3h + 1 x 1h30'],
