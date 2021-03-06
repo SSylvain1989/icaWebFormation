@@ -3,3 +3,32 @@
   height: 20rem;
   margin-bottom: 20rem;
 }
+
+.fiches{
+  color: red;
+}
+
+td.gridjs {
+  &-td {
+    border: 1px solid red;
+    padding: 12px 24px;
+    background-color: green;
+    box-sizing: content-box;
+  }
+
+  &-td:first-child {
+    border-left: none;
+  }
+
+  &-td:last-child {
+    border-right: none;
+  }
+
+  &-message {
+    text-align: center;
+  }
+}
+
+
+.tr.gridjs-tr:nth-child(even) {background: rgb(28, 238, 238)}
+.tr.gridjs-tr:nth-child(odd) {background: #FFF}

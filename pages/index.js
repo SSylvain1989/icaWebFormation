@@ -24,7 +24,7 @@ export default function Home () {
           <p className={styles.wrapper}>
             <Image className={styles.img} src="/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
           </p>
-          Ces formations peuvent aussi être dispensées par demi-journée ou journée.
+          <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
           <p>ICA WebFormation vous propose des formations à distance modulées en courtes séances de 3 heures en général, très appropriées si vous ne souhaitez pas dédier toute votre journée à la formation. 
           Ces formations modulaires sont aussi prévues pour être dispensées en France comme à l’étranger : nous adaptons notre intervention à votre planning !
           </p>
@@ -37,11 +37,11 @@ export default function Home () {
           <section  className={styles.sectionFormations}><h2 className={styles.subtitle}>Nous proposons trois types de formations :</h2>
             <article>
               <div className={styles.sectionFormations__table}>
-                <div onMouseEnter={() =>{ setData(instrumentation),setTypeFormation('instrumentation')}}
+                <div onMouseEnter={() =>{ setData(instrumentation),setTypeFormation('Instrumentation')}}
                       >Instrumentation</div>
-                <div onMouseEnter={() => {setData(regulation),setTypeFormation('regulation')}}
+                <div onMouseEnter={() => {setData(regulation),setTypeFormation('Regulation')}}
                       >Regulation</div>
-                <div onMouseEnter={() => {setData(atex),setTypeFormation('atex')}}
+                <div onMouseEnter={() => {setData(atex),setTypeFormation('ATEX')}}
                       >ATEX</div>
               </div>
               <Formations data={data} typeFormation={typeFormation}/>

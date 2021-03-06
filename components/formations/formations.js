@@ -12,7 +12,6 @@ console.log(data);
 const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation,'Durée','Répartition en modules' ,
 {
   name : 'hidden',
-  hidden : true
 },
 { 
   name: 'Télécharger la fiche',
@@ -20,7 +19,7 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation
 },
 { 
   name: 'voir la fiche',
-  formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.split(" ",3).slice(0,7)}.pdf' target='_blank' >voir la fiche</a>`),
+  formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.split(" ",3).slice(0,7)}.pdf' target='_blank' >🔍voir la fiche</a>`),
 },
 ];
 
@@ -28,19 +27,6 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation
 const text = "/pdf/cv_sylvain_sigonnez.pdf";
   return(  
   <div className={styles.formations}>
-
-      <br/>
-      <a  href="/pdf/cv_sylvain_sigonnez.pdf" download="cv_sylvain_sigonnez">telecharger cv</a>
-      <br/>
-      <a  href="/pdf/cv_sylvain_sigonnez.pdf" target='_blank' >voir cv</a>
-      <br/>
-      <a  href="/pdf/cvsylvain.pdf" download="cv_sylvain_sigonnez">telecharger cv tout collé</a>
-      <br/>
-      <a  href="/pdf/cvsylvain.pdf" target='_blank' >voir cv tout collé</a>
-      <br/>
-
-
-
 
   <Grid
   data={data}
@@ -65,3 +51,14 @@ const text = "/pdf/cv_sylvain_sigonnez.pdf";
 // name: 'Télécharger la fiche',
 // formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.trim().slice(0,7)}.pdf' download='ica-${row.cells[3].data}' >télécharger la fiche</a>`)
 // },
+
+
+{/* <br/>
+<a  href="/pdf/cv_sylvain_sigonnez.pdf" download="cv_sylvain_sigonnez">telecharger cv</a>
+<br/>
+<a  href="/pdf/cv_sylvain_sigonnez.pdf" target='_blank' >voir cv</a>
+<br/>
+<a  href="/pdf/cvsylvain.pdf" download="cv_sylvain_sigonnez">telecharger cv tout collé</a>
+<br/>
+<a  href="/pdf/cvsylvain.pdf" target='_blank' >voir cv tout collé</a>
+<br/> */}
