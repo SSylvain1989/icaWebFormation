@@ -21,9 +21,9 @@ export default function Home () {
       <Layout page='ICA - Web Formation'>
         <div className={styles.description}>
         <h1>ICA - Formation à distance en ligne avec formateur</h1>
-          <p className={styles.wrapper}>
+          <div className={styles.wrapper}>
             <Image className={styles.img} src="/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
-          </p>
+          </div>
           <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
           <p>ICA WebFormation vous propose des formations à distance modulées en courtes séances de 3 heures en général, très appropriées si vous ne souhaitez pas dédier toute votre journée à la formation. 
           Ces formations modulaires sont aussi prévues pour être dispensées en France comme à l’étranger : nous adaptons notre intervention à votre planning !
