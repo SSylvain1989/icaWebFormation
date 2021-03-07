@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout.js";
 import Formations from "../components/formations/formations.js";
 import Image from "next/image";
 import styles from "../styles/index.module.scss";
-import {useState } from "react";
+import { useState, useRef } from "react";
 import instrumentation from '../data/instrumentation.js';
 import atex from '../data/atex.js';
 import regulation from '../data/regulation.js';
@@ -14,7 +14,27 @@ import regulation from '../data/regulation.js';
 export default function Home () {
   const [data, setData] = useState(instrumentation);
  const [typeFormation, setTypeFormation] = useState('instrumentation');
+  
+  // hello, I could not resolve it with CSS, it is really weird. Quickly looking
+  // over it I cannot figure out why CSS is not applied. It has to be overridden
+  // somewhere.
+  // In case you want a hacky solution that works but is not the best, I leave
+  // this here:
 
+  // wait for DOM to be loaded to change gridjs row colors with javascript
+  const [_document, set_document] = useState(null) // taken from https://stackoverflow.com/a/62195707/6272061
+  useEffect(() => {
+    set_document(document)
+
+    // get all gridjs row elements
+    const rows = document.querySelectorAll("table.gridjs-table tbody tr");
+    // iterate
+    rows.forEach((row, indx) => {
+      // every second row apply different styling
+      const color = indx % 2 === 0 ? "rgba(0,0,0,0.1)" : "rgba(0,0,0,0)";
+      row.querySelectorAll("td").forEach(td => td.style.backgroundColor = color);
+    })
+  })
 
   return(
     <div >
