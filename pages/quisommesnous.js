@@ -10,7 +10,7 @@ export default function whoWeAre () {
      <div>
           <Layout page='ICA - Qui sommes nous'>
                {/* div container */}
-               <h2>ICA - Qui sommes nous</h2>
+               <h2>Qui sommes nous ?</h2>
                <article className={styles.whoWeAre}>
 
 

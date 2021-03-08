@@ -36,7 +36,7 @@ export default function Layout({ children, page }) {
         </div>
         <div className={styles.contact}>
           <a href="tel:+33644073309">+33 6 44 07 33 09</a>
-          <a href="mailto:p.sigonnez@hotmail.fr" >contact@icawebformation.fr</a>
+          <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
         </div>
           <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
         {/* *** nav *** */}
@@ -51,14 +51,14 @@ export default function Layout({ children, page }) {
               Qui sommes nous
             </a>
           </Link>
-          <Link href="/formations">
+          {/* <Link href="/formations">
             <a className={styles.navlink}>
               Nos formations
             </a>
-          </Link>
+          </Link> */}
           <Link href="/inscription">
             <a className={styles.navlink}>
-              Inscription 
+              Inscription et pédagogie
             </a>
           </Link>
           <Link href="/references">
@@ -89,7 +89,7 @@ export default function Layout({ children, page }) {
             <p className={styles.about__text}>SIRET 878 135 896 00016</p>
             <p className={styles.about__text}>Déclaration d'activité 93840418984 </p>
             <a href="tel:+33644073309" className={styles.about__text}></a>
-            <a href="mailto:p.sigonnez@hotmail.fr" className={styles.about__text}>p.sigonnez@hotmail.fr</a>
+            <a href="mailto:contact@icawebformation.fr" className={styles.about__text}>contact@icawebformation.fr</a>
           </div>
           {/* div footer_map */}
           <ul className={styles.map}>
@@ -114,17 +114,17 @@ export default function Layout({ children, page }) {
             </a>
           </Link>
             </li>
-            <li>
+            {/* <li>
             <Link href="/formations">
             <a className={styles.map__link}>
               Nos formations
             </a>
           </Link>
-            </li>
+            </li> */}
             <li>
-            <Link href="/comment">
+            <Link href="/inscription">
             <a className={styles.map__link}>
-              Comment 
+            Inscription et pédagogie
             </a>
           </Link>
             </li>

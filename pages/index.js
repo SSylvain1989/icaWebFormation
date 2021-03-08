@@ -20,13 +20,14 @@ export default function Home () {
     <div >
       <Layout page='ICA - Web Formation'>
         <div className={styles.description}>
-        <h1>ICA - Formation à distance en ligne avec formateur</h1>
+        <h1>Formation à distance en ligne avec formateur</h1>
           <p className={styles.wrapper}>
             <Image className={styles.img} src="/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
           </p>
           <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
           <p>ICA WebFormation vous propose des formations à distance modulées en courtes séances de 3 heures en général, très appropriées si vous ne souhaitez pas dédier toute votre journée à la formation. 
-          Ces formations modulaires sont aussi prévues pour être dispensées en France comme à l’étranger : nous adaptons notre intervention à votre planning !
+          </p>
+          <p> Ces formations modulaires sont aussi prévues pour être dispensées en France comme à l’étranger : nous adaptons notre intervention à votre planning !
           </p>
           <p><strong> La formation est dispensée par le formateur qui est toujours en ligne avec les participants. </strong> 
           C'est une formation distancielle synchrone.
@@ -46,6 +47,30 @@ export default function Home () {
               </div>
               <Formations data={data} typeFormation={typeFormation}/>
             </article>
+            <h3 >La formation est dispensée par le formateur qui est toujours en ligne avec les participants. 
+              </h3>
+                  <p>C'est une formation distancielle synchrone. </p>
+                  <p>Également appelée classe virtuelle ou Webclass ou encore Webformation.</p>
+                  <p>Les <strong>interactions sont permanentes </strong>et <strong>en direct</strong>.</p>
+                  <p>Les apprenants visualisent le formateur à distance et le contenu de la formation.
+                  </p>
+              <h3 >Quels sont les avantages de nos formations à distance ? </h3>
+              <ul>
+                  <li>Des formations avec un expert reconnu	</li>
+                  <li>Des formations adaptées à votre rythme :	</li>
+              <ul>
+                  <li>Des horaires adaptés voir modifiables</li>
+                  <li>Peu de temps pris pour la formation dans la journée, en général 3 h.</li>
+                  <li>Les réponses aux questions sont immédiates et interactives</li>
+              </ul>
+                  <li>Un formateur "présent" qui répond à toutes les questions</li>
+                  <li>Des participants qui échangent entre eux	</li>
+                  <li>Des exercices issus de cas concrets pour une bonne adaptabilité des formations</li>
+                  <li>De nombreuses photos d'instruments installés sur site et utilisés en formation</li>
+                  <li>Pas de déplacement pour les apprenants (et donc moins de pollution !)</li>
+                  <li>Pas de coûts induits (hôtel, restauration, etc.)</li>
+                  <li>Possibilité de personnaliser la formation avec votre matériel.</li>
+              </ul>
             </section>
       </Layout>
     </div>

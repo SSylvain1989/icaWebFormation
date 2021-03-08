@@ -7,7 +7,7 @@ export default function Registration () {
   return(
     <div>
       <Layout page='ICA - Inscriptions formations'>
-      <h2 className="text-4xl mb-16"><span className="text-4xl">ICA - </span>Inscription</h2>
+      <h2 className="text-4xl mb-16">Inscription</h2>
       <br/>
       <h3 className="text-left pl-4 text-2xl">Inscriptions :</h3>
 <p className="text-left pl-4">Très simple !</p>
