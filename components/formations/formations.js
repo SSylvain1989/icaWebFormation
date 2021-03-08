@@ -1,8 +1,4 @@
-import { Grid } from "gridjs-react";
-import { html } from "gridjs";
-import "gridjs/dist/theme/mermaid.css";
 import styles from './formations.module.scss';
-import instrumentation from '../data/instrumentation.js';
 
 
 //==import pdf
@@ -15,33 +11,86 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation
 
   return(  
   <div className={styles.formations}>
-    <table>
-      <thead>
-    <tr>
-{columns.map((column) => (
-        <th>
+<table className={styles.formations__table}>
+    <thead className={styles.formations__thead}>
+      <tr className={styles.formations__thead__tr}>
+      {columns.map((column) => (
+        <th key={column} className={styles.formations__thead__th}>
           {column}
           </th>
       ))
       }
       </tr>
-      </thead>
-      <tbody>
-      {data.map(b => {
-          <tr>
-                  {data.map((d) => (
-                      <td>
-                        {d}
-                      </td>
-                  ))
-                  }
-            </tr>
-        })}
+    </thead>
+      <tbody className={styles.formations__tbody}>
+          {data.map(oneLine => (
+            <tr key={oneLine} className={styles.formations__tr}>
+                    {oneLine.map((oneCell) => (
+                        <td key={oneCell} className={styles.formations__tr}>
+                          {oneCell}
+                        </td>
+                    ))
+                    }
+              </tr>
+          ))} 
       </tbody>
     </table>
-    </div>
+  </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+// <table>
+// <thead>
+// <tr>
+// {columns.map((column) => (
+//   <th>
+//     {column}
+//     </th>
+// ))
+// }
+// </tr>
+// </thead>
+// <tbody>
+// {for (let index = 0; index < data.length; index++) {
+// const element = array[index];
+
+// }}
+//     <tr>
+      
+//             {data.map((d) => (
+//               <tr>
+//                 <td>
+//                   {d}
+//                 </td>
+//                 </tr>
+//             ))
+//             }
+//       </tr>
+
+// </tbody>
+// </table>
+// </div>
+// )
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 // <table>

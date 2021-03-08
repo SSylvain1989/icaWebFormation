@@ -9,8 +9,6 @@
   },
   "dependencies": {
     "file-loader": "^6.2.0",
-    "gridjs": "^3.3.0",
-    "gridjs-react": "^3.2.2",
     "next": "10.0.7",
     "next-progressbar": "^1.0.0",
     "react": "17.0.1",
