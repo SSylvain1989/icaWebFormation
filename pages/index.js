@@ -34,15 +34,15 @@ export default function Home () {
           <p><strong> Les interactions sont permanentes et en direct. </strong> 
           Les apprenants visualisent le formateur à distance et le contenu de la formation soit sur leur micro-ordinateur soit par vidéo-conférence.</p>
           </div>
-          <section  className={styles.sectionFormations}><h2 className={styles.subtitle}>Nous proposons trois types de formations :</h2>
+          <section  className={styles.sectionFormations}><h2 className={styles.subtitle}>Domaines de formations :</h2>
             <article>
               <div className={styles.sectionFormations__table}>
-                <div onMouseEnter={() =>{ setData(instrumentation),setTypeFormation('Instrumentation')}}
-                      >Instrumentation</div>
-                <div onMouseEnter={() => {setData(regulation),setTypeFormation('Regulation')}}
-                      >Regulation</div>
-                <div onMouseEnter={() => {setData(atex),setTypeFormation('ATEX')}}
-                      >ATEX</div>
+                <button onClick={() =>{ setData(instrumentation),setTypeFormation('Instrumentation')}}
+                      >Instrumentation</button>
+                <button onClick={() => {setData(regulation),setTypeFormation('Regulation')}}
+                      >Regulation</button>
+                <button onClick={() => {setData(atex),setTypeFormation('ATEX')}}
+                      >ATEX</button>
               </div>
               <Formations data={data} typeFormation={typeFormation}/>
             </article>

@@ -1,28 +1,61 @@
 @use '/styles/vars';
 
 .formations{
-  padding: 1rem 2rem;
+  padding: 2rem 0rem;
   height: 20rem;
   margin-bottom: 20rem;
   text-align: center;
   &__table{
-    border: solid 1px black;
+    width: 70rem;
+    max-width: 70rem;
+    font-size: 0.7rem;
+    margin: auto;
+    border-collapse: collapse;
     border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.50);
   }&__thead{
+    background-color: vars.$text-purple;
     margin-bottom: 5px;
-    border: solid 1px black;
+    color: #f3f3f3;
+    font-size: 0.9rem;
     &__th{
-      padding: 10px;
-      border: solid 1px black;
+      padding: 10px 5px;
     }
   }&__tr{
-    border: solid 1px black;
-    padding: 5px 1px;
+    padding: 5px 0px;
+    border-bottom: 1px solid #dddd;
   }&__tr:nth-child(even){
-    background: rgb(238, 238, 238);
-  }&__tr:nth-child(odd) {
-    background: #FFF}
+    background-color: #f3f3f3;
+  }&__tr:last-child{
+    border-bottom: 4px solid vars.$text-purple;
+  }&__tr:hover{
+    color: vars.$text-purple;
+  }&__td{
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    div{
+      display: flex;
+      flex-direction: row;
+      a{
+        padding: 0px 5px;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+    }
+  }&__tdGreen{
+    color: green;
   }
+  &__tdRed{
+    color: red;
+  } &__tdOrange{
+    color:orange;
+  }
+  }
+
+
+
+
 
 
 

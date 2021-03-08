@@ -7,7 +7,7 @@ import moncv from './../../public/pdf/cv_sylvain_sigonnez.pdf';
 export default function Formations ({data, typeFormation}) {
 console.log('tada',data);
 
-const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation,'Durée','Répartition en modules' ]
+const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation,'Durée','Répartition en modules' ,'PDF']
 
   return(  
   <div className={styles.formations}>
@@ -26,7 +26,9 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation
           {data.map(oneLine => (
             <tr key={oneLine} className={styles.formations__tr}>
                     {oneLine.map((oneCell) => (
-                        <td key={oneCell} className={styles.formations__tr}>
+                        <td key={oneCell} className={ `${oneCell === 'Adaptée' ? styles.formations__tdGreen : styles.formations__td}
+                                                                                      ${oneCell === 'Inadaptée' ? styles.formations__tdRed : styles.formations__td}
+                                                                                      ${oneCell === 'Préconisée' ? styles.formations__tdOrange : styles.formations__td}`}> 
                           {oneCell}
                         </td>
                     ))
@@ -126,7 +128,7 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation
 // },
 // { 
 //   name: 'Télécharger la fiche',
-//   formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.split(" ",3).slice(0,7)}.pdf' download='ica-${row.cells[3].data}' >télécharger la fiche</a>`)
+  // formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.split(" ",3).slice(0,7)}.pdf' download='ica-${row.cells[3].data}' >télécharger la fiche</a>`)
 // },
 // { 
 //   name: 'voir la fiche',
