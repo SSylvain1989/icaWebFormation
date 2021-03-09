@@ -13,6 +13,8 @@ import styles from './layout.module.scss';
 
 
 export default function Layout({ children, page }) {
+  const router = useRouter();
+
   return (
     <div className={styles.layoutContainer}>
       <Head>
@@ -42,12 +44,12 @@ export default function Layout({ children, page }) {
         {/* *** nav *** */}
         <nav>
           <Link href="/">
-            <a className={styles.navlink}>
+            <a className={router.pathname ==="/" ? styles.navlinkActive : styles.navlink}>
               Accueil
             </a>
           </Link>
           <Link href="/quisommesnous">
-            <a className={styles.navlink}>
+            <a className={router.pathname ==="/quisommesnous" ? styles.navlinkActive : styles.navlink}>
               Qui sommes nous
             </a>
           </Link>
@@ -57,17 +59,17 @@ export default function Layout({ children, page }) {
             </a>
           </Link> */}
           <Link href="/inscription">
-            <a className={styles.navlink}>
+            <a className={router.pathname ==="/inscription" ? styles.navlinkActive : styles.navlink}>
               Inscription et pédagogie
             </a>
           </Link>
           <Link href="/references">
-            <a className={styles.navlink}>
+            <a className={router.pathname ==="/references" ? styles.navlinkActive : styles.navlink}>
               Nos références
             </a>
           </Link>
           <Link href="/contact">
-            <a className={styles.navlink}>
+            <a className={router.pathname ==="/contact" ? styles.navlinkActive : styles.navlink}>
               Contact
             </a>
           </Link>

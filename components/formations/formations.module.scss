@@ -2,12 +2,12 @@
 
 .formations{
   padding: 2rem 0rem;
-  height: 20rem;
-  margin-bottom: 20rem;
+  height: 34rem;
+  margin-bottom: 10rem;
   text-align: center;
   &__table{
-    width: 78rem;
-    max-width: 78rem;
+    width: 72rem;
+    max-width: 72rem;
     font-size: 0.7rem;
     margin: auto;
     border-collapse: collapse;
@@ -20,7 +20,10 @@
     color: #f3f3f3;
     font-size: 0.9rem;
     &__th{
+      padding: 9px 5px;
+    }&__title{
       padding: 10px 5px;
+      border-bottom: 1px solid #dddd;
     }
   }&__tr{
     padding: 5px 0px;

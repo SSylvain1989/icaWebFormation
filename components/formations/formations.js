@@ -13,6 +13,8 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation
   <div className={styles.formations}>
 <table className={styles.formations__table}>
     <thead className={styles.formations__thead}>
+        {/* <th className={styles.formations__thead__title} colSpan="3">Pour qui ? </th>
+        <th className={styles.formations__thead__title} colSpan="4">Formations </th> */}
       <tr className={styles.formations__thead__tr}>
       {columns.map((column) => (
         <th key={column} className={styles.formations__thead__th}>
