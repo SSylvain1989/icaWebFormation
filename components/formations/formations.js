@@ -7,14 +7,19 @@ import moncv from './../../public/pdf/cv_sylvain_sigonnez.pdf';
 export default function Formations ({data, typeFormation}) {
 console.log('tada',data);
 
-const columns = ['Bureaux d’étude','Maintenance','Exploitation',typeFormation,'Durée','Répartition en modules' ,'PDF']
+const columns = ['Bureaux d’étude','Maintenance','Exploitation']
 
   return(  
   <div className={styles.formations}>
 <table className={styles.formations__table}>
     <thead className={styles.formations__thead}>
-        {/* <th className={styles.formations__thead__title} colSpan="3">Pour qui ? </th>
-        <th className={styles.formations__thead__title} colSpan="4">Formations </th> */}
+      <tr>
+        <th className={styles.formations__thead__th} rowSpan="2">{`Formation ${typeFormation}`}</th> 
+        <th className={styles.formations__thead__title} colSpan="3">POUR QUI ? </th>
+        <th className={styles.formations__thead__th} rowSpan="2">Durée </th> 
+        <th className={styles.formations__thead__th} rowSpan="2">Répartition en modules </th> 
+        <th className={styles.formations__thead__th} rowSpan="2">PDF </th> 
+        </tr>
       <tr className={styles.formations__thead__tr}>
       {columns.map((column) => (
         <th key={column} className={styles.formations__thead__th}>
