@@ -51,3 +51,15 @@ border-radius: 5px;
   border-bottom: 1px black solid;
 }
 
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
+{
+  .sectionFormations{
+    &__article{
+      padding-bottom: 18rem;
+    }  button{
+      width: 12rem;
+      height: 2.1rem;
+      font-size: 0.9rem;
+    }
+  }
+}

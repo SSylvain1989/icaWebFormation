@@ -94,11 +94,15 @@
 //   }
 
 // }
-// @media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
-// {
-
-
-// }
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
+{
+  .formations{
+    padding: 0rem;
+    &__table{
+      
+}
+  }
+}
 
 // @media(min-width: 540px) and (max-width: 766px) // test sur surface duo FINI
 //  {

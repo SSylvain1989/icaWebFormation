@@ -64,11 +64,11 @@
       width: 100%;
       max-width: 100%;
       text-align: center;
-      border-bottom: grey 3px solid;
+      border-bottom: grey 3px solid ;
       .navlink{
         text-decoration: none;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
         color: vars.$text-purple;
         font-size: 1.5rem;
         padding: 0.4rem 0.4rem 0.1rem 0.4rem;
@@ -81,8 +81,8 @@
       }
       .navlinkActive{
         text-decoration: none;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
         font-size: 1.5rem;
         padding: 0.4rem 0.4rem 0.1rem 0.4rem;
         outline: 0px vars.$text-purple solid;
@@ -182,27 +182,109 @@ main{
 // tablette 
 @media(min-width: 1024px) and (max-width: 1388px){
   .layoutContainer{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     }
 
 }
-@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
 {
   .layoutContainer{
     margin-left: 0rem;
     margin-right: 0rem;
+    .header{ // tout le header
+      h2{
+        font-size: 30px;
+      }
+    .container{ // juste le container du haut sans contact
+        height: 8rem;
+        &__wrapper{
+          width: 75%;
+          margin: 1rem 0.5rem 4rem 0.5rem;
+        }&__title{
+          font-size: 2.4rem;
+        }&__keyWord{
+          margin: 1.5rem 1rem 0rem 10rem;
+          p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .contact{ // partie basse du header
+        margin: -1rem 1rem 0rem 7rem;
+      }
+      img{
+        width: 65px;
+        height: 80px;
+      }
+      nav{
+        .navlink{
+          font-size: 1.2rem;
+          padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+        }
+        .navlinkActive{
+          font-size: 1.2rem;
+        }
+      }
     }
-
+    .footerContainer{
+      padding: 0rem 3rem;
+      .about{
+        padding-top: 2.1rem;
+        &__text{
+          font-size: 1.1rem;
+        }&__link{
+          font-size: 1.2rem;
+        }
+      }
+      .map{
+        li{
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
 }
 
 @media(min-width: 540px) and (max-width: 766px) // test sur surface duo FINI
- {
+{
   .layoutContainer{
     margin-left: 0rem;
     margin-right: 0rem;
+    .header{ // tout le header
+    .container{ // juste le container du haut sans contact
+        height: 8rem;
+        &__wrapper{
+          width: 75%;
+          margin: 1rem 0.5rem 4rem 0.5rem;
+        }&__title{
+          font-size: 2.5rem;
+        }&__keyWord{
+          margin: 1.5rem 1rem 0rem 10rem;
+          p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .contact{ // partie basse du header
+        margin: 0rem 1rem 0rem 7rem;
+      }
+      img{
+        width: 75px;
+        height: 90px;
+      }
+      nav{
+        .navlink{
+          font-size: 1.2rem;
+          padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+        }
+        .navlinkActive{
+          font-size: 1.2rem;
+        }
+      }
     }
- }
+  }
+}
 
 
 
