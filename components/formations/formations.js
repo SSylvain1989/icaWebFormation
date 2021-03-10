@@ -5,172 +5,58 @@ import styles from './formations.module.scss';
 import moncv from './../../public/pdf/cv_sylvain_sigonnez.pdf';
 
 export default function Formations ({data, typeFormation}) {
-console.log('tada',data);
-
 const columns = ['Bureaux d’étude','Maintenance','Exploitation']
 
   return(  
-  <div className={styles.formations}>
-<table className={styles.formations__table}>
-    <thead className={styles.formations__thead}>
-      <tr>
-        <th className={styles.formations__thead__th} rowSpan="2">{`Formation ${typeFormation}`}</th> 
-        <th className={styles.formations__thead__title} colSpan="3">POUR QUI ? </th>
-        <th className={styles.formations__thead__th} rowSpan="2">Durée </th> 
-        <th className={styles.formations__thead__th} rowSpan="2">Répartition en modules </th> 
-        <th className={styles.formations__thead__th} rowSpan="2">PDF </th> 
-        </tr>
-      <tr className={styles.formations__thead__tr}>
-      {columns.map((column) => (
-        <th key={column} className={styles.formations__thead__th}>
-          {column}
-          </th>
-      ))
-      }
-      </tr>
-    </thead>
-      <tbody className={styles.formations__tbody}>
-          {data.map(oneLine => (
-            <tr key={oneLine} className={styles.formations__tr}>
-                    {oneLine.map((oneCell) => (
-                        <td key={oneCell} className={ `${oneCell === 'Adaptée' ? styles.formations__tdGreen : styles.formations__td}
-                                                                                      ${oneCell === 'Inadaptée' ? styles.formations__tdRed : styles.formations__td}
-                                                                                      ${oneCell === 'Préconisée' ? styles.formations__tdOrange : styles.formations__td}`}> 
-                          {oneCell}
-                        </td>
-                    ))
-                    }
-              </tr>
-          ))} 
-      </tbody>
-    </table>
-  </div>
+  <div>
+      <div className={styles.formations}>
+      <table className={styles.formations__table}>
+      {typeFormation === 'ATEX' 
+      ?
+      <>
+      <caption className={styles.formations__atex}>Toutes nos formations sur les atmosphères explosives (ATEX) sont basées sur les directives 1999/92/CE et 2014/34/UE.
+      Formateur intervenant en zones ATEX, certifié (et recertifié) par l’INERIS niveau 3 électrique et mécanique (non-électrique) tous les 3 ans.</caption> 
+      <caption className={styles.formations__generic}> 👉  Formation sur mesure : donnez nous votre objectif sur <a href="mailto:contact@icawebformation.fr" className={styles.about__text}>contact@icawebformation.fr</a>  ou appelez nous au <a href="tel:+33644073309" className={styles.about__text}>+33 644 073 309</a> </caption>
+      <caption className={styles.formations__tfoot}>* Avec ou sans certification de l’INERIS</caption>
+</>
+      :
+      <caption className={styles.formations__generic}>👉  Formation sur mesure : donnez nous votre objectif sur <a href="mailto:contact@icawebformation.fr" className={styles.about__text}>contact@icawebformation.fr</a>  ou appelez nous au <a href="tel:+33644073309" className={styles.about__text}>+33 644 073 309</a> </caption> }
+        <thead className={styles.formations__thead}>
+          <tr>
+            <th className={styles.formations__thead__th} rowSpan="2">{`FORMATIONS ${typeFormation}`}</th> 
+            <th className={styles.formations__thead__title} colSpan="3">POUR QUI ? </th>
+            <th className={styles.formations__thead__th} rowSpan="2">DURÉE </th> 
+            <th className={styles.formations__thead__th} rowSpan="2">RÉPARTITIONS EN MODULES </th> 
+            <th className={styles.formations__thead__th} rowSpan="2">FICHE FORMATION </th> 
+            </tr>
+          <tr className={styles.formations__thead__tr}>
+          {columns.map((column) => (
+            <th key={column} className={styles.formations__thead__th}>
+              {column}
+              </th>
+          ))
+          }
+          </tr>
+        </thead>
+          <tbody className={styles.formations__tbody}>
+              {data.map(oneLine => (
+                <tr key={oneLine} className={styles.formations__tr}>
+                        {oneLine.map((oneCell) => (
+                            <td key={oneCell} className={ `${oneCell === 'Adaptée' ? styles.formations__tdGreen : styles.formations__td}
+                                                                                          ${oneCell === 'Inadaptée' ? styles.formations__tdRed : styles.formations__td}
+                                                                                          ${oneCell === 'Préconisée' ? styles.formations__tdOrange : styles.formations__td}`}> 
+                              {oneCell}
+                            </td>
+                        ))
+                        }
+                  </tr>
+              ))} 
+          </tbody>
+          </table>
+      </div>
+      <div className={styles.formations__footer}>
+        
+      </div>
+</div>
   )
 }
-
-
-
-
-
-
-
-
-
-
-// <table>
-// <thead>
-// <tr>
-// {columns.map((column) => (
-//   <th>
-//     {column}
-//     </th>
-// ))
-// }
-// </tr>
-// </thead>
-// <tbody>
-// {for (let index = 0; index < data.length; index++) {
-// const element = array[index];
-
-// }}
-//     <tr>
-      
-//             {data.map((d) => (
-//               <tr>
-//                 <td>
-//                   {d}
-//                 </td>
-//                 </tr>
-//             ))
-//             }
-//       </tr>
-
-// </tbody>
-// </table>
-// </div>
-// )
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-// <table>
-// <thead>
-// <tr>
-// {columns.map((column) => (
-//   <th>
-//     {column}
-//     </th>
-// ))
-// }
-// </tr>
-// </thead>
-// <tbody>
-// {instrumentation.forEach(element => {
-//     <tr>
-//             {data.map((d) => (
-//                 <td>
-//                   {d}
-//                 </td>
-//             ))
-//             }
-//       </tr>
-//   })}
-// </tbody>
-// </table>
-// </div>
-// )
-// }
-
-// {
-//   name : 'hidden',
-// },
-// { 
-//   name: 'Télécharger la fiche',
-  // formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.split(" ",3).slice(0,7)}.pdf' download='ica-${row.cells[3].data}' >télécharger la fiche</a>`)
-// },
-// { 
-//   name: 'voir la fiche',
-//   formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.split(" ",3).slice(0,7)}.pdf' target='_blank' >🔍voir la fiche</a>`),
-// },
-// ];
-
-
-// const text = "/pdf/cv_sylvain_sigonnez.pdf";
-
-// <Grid
-// data={data}
-// columns={columns}
-// search={true}
-// pagination={{
-//   enabled: true,
-//   limit: 10,
-// }}
-// /> 
-
-// import test from '../../public/images/ica-logo.png';
-
-// import Image from 'next/image';
-
-// name: 'Télécharger la fiche',
-// formatter: (_, row) => html(`<a href='/pdf/${row.cells[3].data.trim().slice(0,7)}.pdf' download='ica-${row.cells[3].data}' >télécharger la fiche</a>`)
-// },
-
-
-{/* <br/>
-<a  href="/pdf/cv_sylvain_sigonnez.pdf" download="cv_sylvain_sigonnez">telecharger cv</a>
-<br/>
-<a  href="/pdf/cv_sylvain_sigonnez.pdf" target='_blank' >voir cv</a>
-<br/>
-<a  href="/pdf/cvsylvain.pdf" download="cv_sylvain_sigonnez">telecharger cv tout collé</a>
-<br/>
-<a  href="/pdf/cvsylvain.pdf" target='_blank' >voir cv tout collé</a>
-<br/> */}

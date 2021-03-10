@@ -20,10 +20,10 @@ export default function Home () {
     <div >
       <Layout page='ICA - Web Formation'>
         <div className={styles.description}>
-        <h1>Formation à distance en ligne avec formateur</h1>
           <p className={styles.wrapper}>
             <Image className={styles.img} src="/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
           </p>
+          <h2>Formations dédiées à l'instrumentation, contrôles-commandes et aux directives ATEX</h2>
           <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
           <p>ICA WebFormation vous propose des formations à distance modulées en courtes séances de 3 heures en général, très appropriées si vous ne souhaitez pas dédier toute votre journée à la formation. 
           </p>
@@ -35,24 +35,23 @@ export default function Home () {
           <p><strong> Les interactions sont permanentes et en direct. </strong> 
           Les apprenants visualisent le formateur à distance et le contenu de la formation soit sur leur micro-ordinateur soit par vidéo-conférence.</p>
           </div>
-          <section  className={styles.sectionFormations}><h2 className={styles.subtitle}>Domaines de formations :</h2>
-            <article>
+          <section  className={styles.sectionFormations}>
+            <h2 className={styles.subtitle}>Domaines de formations :</h2>
+            <article className={styles.sectionFormations__article}>
               <div className={styles.sectionFormations__table}>
-                <button onClick={() =>{ setData(instrumentation),setTypeFormation('Instrumentation')}}
+                <button onClick={() =>{ setData(instrumentation),setTypeFormation('INSTRUMENTATION')}}
                       >Instrumentation</button>
-                <button onClick={() => {setData(regulation),setTypeFormation('Regulation')}}
+                <button onClick={() => {setData(regulation),setTypeFormation('REGULATION')}}
                       >Regulation</button>
                 <button onClick={() => {setData(atex),setTypeFormation('ATEX')}}
                       >ATEX</button>
               </div>
               <Formations data={data} typeFormation={typeFormation}/>
             </article>
-            <h3 >La formation est dispensée par le formateur qui est toujours en ligne avec les participants. 
+            <h3>La formation est dispensée par le formateur qui est toujours en ligne avec les participants. 
               </h3>
-                  <p>C'est une formation distancielle synchrone. </p>
-                  <p>Également appelée classe virtuelle ou Webclass ou encore Webformation.</p>
-                  <p>Les <strong>interactions sont permanentes </strong>et <strong>en direct</strong>.</p>
-                  <p>Les apprenants visualisent le formateur à distance et le contenu de la formation.
+                  <p>C'est une formation distancielle synchrone. Également appelée classe virtuelle ou Webclass ou encore Webformation.</p>
+                  <p>Les <strong>interactions sont permanentes </strong>et <strong>en direct</strong>. Les apprenants visualisent le formateur à distance et le contenu de la formation.
                   </p>
               <h3 >Quels sont les avantages de nos formations à distance ? </h3>
               <ul>

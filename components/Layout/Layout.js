@@ -22,6 +22,9 @@ export default function Layout({ children, page }) {
         {/* donc pour bien comprendre quand je serais sur la page "à propos" le titre de l'onglet sera "à propos" grace à la props "page" */}
         <meta name="description" content="ICA Web Formation vous forme sur toute la partie instrumentation , Atex ou encore régulation , et tout ça en ligne"/>
         {/* c'est ici qu'on mettra nos balise meta pour le SEO / référencement naturel */}
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        </style>
       </Head>
       {/* là aussi une balise header comme en html , donc qui représente le header de notre page */}
       <header className={styles.header}>

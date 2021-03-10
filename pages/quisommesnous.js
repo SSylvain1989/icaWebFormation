@@ -9,8 +9,7 @@ export default function whoWeAre () {
      return(
      <div>
           <Layout page='ICA - Qui sommes nous'>
-               {/* div container */}
-               <h2>Qui sommes nous ?</h2>
+
                <article className={styles.whoWeAre}>
 
 

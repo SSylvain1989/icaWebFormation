@@ -5,8 +5,8 @@
   // border: green solid 5px;
   display: flex;
   flex-direction: column;
-  margin-left: 30rem;
-  margin-right: 30rem;
+  margin-left: 60rem;
+  margin-right: 60rem;
   .header{ // tout le header
     &__h2{
     text-align: center;
@@ -143,6 +143,22 @@ main{
         border-bottom: vars.$text-purple solid 1px;
       }
     }
+  }
+}
+
+@media(min-width: 3073px) and (max-width: 3380px)
+{
+  .layoutContainer{
+  margin-left: 53rem;
+  margin-right: 53rem;
+  }
+}
+
+@media(min-width: 2143px) and (max-width: 3073px)
+{
+  .layoutContainer{
+  margin-left: 43rem;
+  margin-right: 43rem;
   }
 }
 
