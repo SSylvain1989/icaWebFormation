@@ -1,9 +1,5 @@
 import styles from './formations.module.scss';
 
-
-//==import pdf
-import moncv from './../../public/pdf/cv_sylvain_sigonnez.pdf';
-
 export default function Formations ({data, typeFormation}) {
 const columns = ['Bureaux d’étude','Maintenance','Exploitation']
 

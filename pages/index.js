@@ -13,7 +13,7 @@ import regulation from '../data/regulation.js';
 
 export default function Home () {
   const [data, setData] = useState(instrumentation);
- const [typeFormation, setTypeFormation] = useState('instrumentation');
+ const [typeFormation, setTypeFormation] = useState('INSTRUMENTATION');
 
 
   return(
