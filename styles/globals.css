@@ -16,7 +16,7 @@ h1{
   line-height: 1.2;
   margin-bottom: 5px;
   margin-top: 0.2em;
-  font-size: 65px;
+  font-size: 30px;
   font-weight: 700;
 }
 h2{
@@ -24,28 +24,28 @@ h2{
   line-height: 1.2;
   margin-bottom: 5px;
   margin-top: 1.2em;
-  font-size: 40px;
+  font-size: 21px;
   font-weight: 700;
 }
 h3{
-padding-top: 45px;
+padding-top: 18px;
 padding-bottom: 0px;
 font-style: normal;
-font-size: 28px;
+font-size: 18px;
 font-weight: 700;
 
 }
 p{
   margin-top: 1.2em;
   margin-bottom: 1.2em;
-  line-height: 1em;
-  font-size: 22px;
+  line-height: 1.35rem;
+  font-size: 16px;
 }
 li{
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
-  line-height: 1rem;
-  font-size: 22px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.3rem;
+  font-size: 16px;
 }
 
 * {
@@ -55,15 +55,15 @@ li{
 @media (max-width : 600px )
 {
   h2{
-    font-size: 25px;
+    font-size: 18px;
   }
   p{
-    font-size: 16px;
+    font-size: 14px;
   }
   h3{
     font-size: 20px;
     }
     li{
-      font-size: 16px;
+      font-size: 14px;
     }
 }

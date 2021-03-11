@@ -13,7 +13,7 @@ import regulation from '../data/regulation.js';
 
 export default function Home () {
   const [data, setData] = useState(instrumentation);
- const [typeFormation, setTypeFormation] = useState('INSTRUMENTATION');
+  const [typeFormation, setTypeFormation] = useState('INSTRUMENTATION');
 
 
   return(
@@ -48,11 +48,6 @@ export default function Home () {
               </div>
               <Formations data={data} typeFormation={typeFormation}/>
             </article>
-            <h3>La formation est dispensée par le formateur qui est toujours en ligne avec les participants. 
-              </h3>
-                  <p>C'est une formation distancielle synchrone. Également appelée classe virtuelle ou Webclass ou encore Webformation.</p>
-                  <p>Les <strong>interactions sont permanentes </strong>et <strong>en direct</strong>. Les apprenants visualisent le formateur à distance et le contenu de la formation.
-                  </p>
               <h3 >Quels sont les avantages de nos formations à distance ? </h3>
               <ul>
                   <li>Des formations avec un expert reconnu	</li>
