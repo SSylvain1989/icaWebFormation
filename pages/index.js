@@ -1,14 +1,19 @@
 // pour plus de simplicité on exporte directement notre fonction
 // ça évite la confusion si plusieurs composants à la suite , par contre fini les fléchées.
 
+import {useState } from "react";
+import { FaTv, FaLeanpub, FaRegClock, FaLaptop } from "react-icons/fa";
+import { BiUserCheck } from "react-icons/bi";
+import { CgScreen } from "react-icons/cg";
+import {IoIosLaptop }  from "react-icons/io"
 import Layout from "../components/Layout/Layout.js";
 import Formations from "../components/formations/formations.js";
 import Image from "next/image";
 import styles from "../styles/index.module.scss";
-import {useState } from "react";
 import instrumentation from '../data/instrumentation.js';
 import atex from '../data/atex.js';
 import regulation from '../data/regulation.js';
+
 
 
 export default function Home () {
@@ -20,10 +25,26 @@ export default function Home () {
     <div >
       <Layout page='ICA - Web Formation'>
         <div className={styles.description}>
+          <div className={styles.description__header}>
+            <div>
+              <li><span><IoIosLaptop/></span>
+              <h4>Formations en ligne</h4>
+                <p>Formez-vous au travail ou en télétravail</p>
+              </li>
+              <li><FaRegClock id={styles.clockIcon}/>
+              <h4>On s'adapte à votre emploi du temps</h4>
+                <p>Un formateur est à disposition selon votre fuseau horaire </p>
+              </li>
+              <li><BiUserCheck id={styles.formateurIcon}/>
+              <h4>Un formateur certifié</h4>
+              <p>Un formateur reconnu , expérimenté et certifié </p>
+              </li>
+            </div>
+          </div>
           <p className={styles.wrapper}>
-            <Image className={styles.img} src="/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
+            <Image className={styles.img} src="/images/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
           </p>
-          <h2>Formations dédiées à l'instrumentation, contrôles-commandes et aux directives ATEX</h2>
+          <h2>Formations dédiées à l'instrumentation, au contrôle-commande et aux directives ATEX</h2>
           <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
           <p>ICA WebFormation vous propose des formations à distance modulées en courtes séances de 3 heures en général, très appropriées si vous ne souhaitez pas dédier toute votre journée à la formation. 
           </p>

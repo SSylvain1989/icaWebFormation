@@ -1,5 +1,8 @@
 @use '/styles/vars';
 
+#logolink{
+  text-decoration: none;
+}
 
 .layoutContainer{
   // border: green solid 5px;
@@ -10,37 +13,38 @@
   .header{ // tout le header
     &__h2{
     text-align: center;
-    margin-bottom: 3.5rem;
+    padding-left: 2rem;
+    margin-bottom: 2.7rem;
     color: vars.$text-purple;
     }
     .container{ // juste le container du haut sans contact
       // border: red 1px solid;
       display: flex;
       flex-direction: row;
-      height: 9.5rem;
+      height: 6rem;
       &__wrapper{
         display: flex;
         flex-direction: row;
-        width: 60%;
+        width: 100%;
         // border: green 1px solid;
         height: fit-content;
-        margin: 2rem 1rem 6rem 1rem;
+        margin: 1rem 19rem 0.2rem 1rem;
       }&__title{
         // border: green 3px solid;
-        margin: 2rem 1rem 1.5rem 0rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
         color: vars.$text-purple;
       }&__keyWord{
+        width: 39%;
         color: vars.$text-purple;
         font-size: 1.5rem;
         font-weight: 700;
-        margin: 1.5rem 1rem 0rem 10rem;
+        margin: 0.5rem 1rem 0rem 15rem;
         height: 9rem;
       }
     }
     .contact{ // partie basse du header
-      margin: 0.2rem 1rem 1.5rem 7rem;
+      margin: 0rem 1rem 1.5rem 5rem;
       display: flex;
       flex-direction: column;
       color: vars.$text-purple;
@@ -56,9 +60,9 @@
       }
     }
     img{
-      margin-top: 1rem;
-      width: 85px;
-      height: 100px;
+      margin: 0.3rem 1.2rem;
+      width: 50px;
+      height: 50px;
     }
     nav{
       width: 100%;
@@ -71,7 +75,7 @@
         margin-right: 0.1rem;
         color: vars.$text-purple;
         font-size: 1.5rem;
-        padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+        padding: 0.4rem 0.6rem 0rem 0.9rem;
       }
       .navlink:hover{
         outline: 0px vars.$text-purple solid;
@@ -84,7 +88,7 @@
         margin-left: 0.3rem;
         margin-right: 0.3rem;
         font-size: 1.5rem;
-        padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+        padding: 0.4rem 0.6rem 0rem 0.9rem;
         outline: 0px vars.$text-purple solid;
         border-radius: 5px 5px 0px 0px;
         background-color: vars.$text-purple;

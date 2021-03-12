@@ -29,10 +29,18 @@ export default function Layout({ children, page }) {
       {/* là aussi une balise header comme en html , donc qui représente le header de notre page */}
       <header className={styles.header}>
         <div className={styles.container}>
+            <Link href="/">
+              <a id={styles.logolink} href="/">
           <div className={styles.container__wrapper}>
-            <img className={styles.logo} src="/ica-logo.png" alt="ica-logo" />
-            <h1 className={styles.container__title}>ICA WebFormation</h1>
+                <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
+                {/* <Link href="/">
+                  <a href="/"> */}
+                <h1 className={styles.container__title}>ICA WebFormation</h1>
+                {/* </a>
+                </Link> */}
           </div>
+            </a>
+            </Link>
           <div className={styles.container__keyWord}>
         <p>Instrumentation<br/>
           Contrôle-commande<br/>
@@ -48,7 +56,12 @@ export default function Layout({ children, page }) {
         <nav>
           <Link href="/">
             <a className={router.pathname ==="/" ? styles.navlinkActive : styles.navlink}>
-              Accueil
+              Nos formations
+            </a>
+          </Link>
+          <Link href="/inscription">
+            <a className={router.pathname ==="/inscription" ? styles.navlinkActive : styles.navlink}>
+              Inscription et Pédagogie
             </a>
           </Link>
           <Link href="/quisommesnous">
@@ -61,11 +74,6 @@ export default function Layout({ children, page }) {
               Nos formations
             </a>
           </Link> */}
-          <Link href="/inscription">
-            <a className={router.pathname ==="/inscription" ? styles.navlinkActive : styles.navlink}>
-              Inscription et pédagogie
-            </a>
-          </Link>
           <Link href="/references">
             <a className={router.pathname ==="/references" ? styles.navlinkActive : styles.navlink}>
               Nos références
