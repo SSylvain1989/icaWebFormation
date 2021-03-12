@@ -27,7 +27,7 @@ export default function Home () {
           <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
           <p>ICA WebFormation vous propose des formations à distance modulées en courtes séances de 3 heures en général, très appropriées si vous ne souhaitez pas dédier toute votre journée à la formation. 
           </p>
-          <p> Ces formations modulaires sont aussi prévues pour être dispensées en France comme à l’étranger : nous adaptons notre intervention à votre planning !
+          <p> Ces formations modulaires sont dispensées en France et à l’étranger : <strong>nous adaptons notre intervention à votre planning </strong> !
           </p>
           <p><strong> La formation est dispensée par le formateur qui est toujours en ligne avec les participants. </strong> 
           C'est une formation distancielle synchrone.
