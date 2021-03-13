@@ -53,7 +53,10 @@ export default function Layout({ children, page }) {
         </div>
           <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
         {/* *** nav *** */}
+        </header>
+        <div className={styles.navBar}>
         <nav>
+          
           <Link href="/">
             <a className={router.pathname ==="/" ? styles.navlinkActive : styles.navlink}>
               Nos formations
@@ -69,11 +72,6 @@ export default function Layout({ children, page }) {
               Qui sommes nous
             </a>
           </Link>
-          {/* <Link href="/formations">
-            <a className={styles.navlink}>
-              Nos formations
-            </a>
-          </Link> */}
           <Link href="/references">
             <a className={router.pathname ==="/references" ? styles.navlinkActive : styles.navlink}>
               Nos références
@@ -85,7 +83,8 @@ export default function Layout({ children, page }) {
             </a>
           </Link>
         </nav>
-      </header>
+        </div>
+      
       <main className={styles.mainContainer}> 
       {children}
       </main>

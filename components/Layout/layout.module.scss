@@ -11,10 +11,10 @@
   margin-left: 60rem;
   margin-right: 60rem;
   .header{ // tout le header
+
     &__h2{
     text-align: center;
     padding-left: 2rem;
-    margin-bottom: 2.7rem;
     color: vars.$text-purple;
     }
     .container{ // juste le container du haut sans contact
@@ -54,6 +54,7 @@
         text-decoration: none;
         color: vars.$text-purple;
         width: fit-content;
+
       }
       a:hover{
         border-bottom: vars.$text-purple solid 1px;
@@ -63,37 +64,50 @@
       margin: 0.3rem 1.2rem;
       width: 50px;
       height: 50px;
+    }   
+  }
+  .navBar{
+    position: sticky;
+    top: 0;
+    height: 5rem;
+    background-color:white;
+    padding-top: 2rem;
+    z-index: 999;
+  }
+  nav{
+    
+    position: sticky;
+    top: 0;
+    height: 2rem;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    border-bottom: grey 3px solid ;
+    background-color: white;
+    .navlink{
+      text-decoration: none;
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+      color: vars.$text-purple;
+      font-size: 1.5rem;
+      padding: 0.4rem 0.6rem 0rem 0.9rem;
     }
-    nav{
-      width: 100%;
-      max-width: 100%;
-      text-align: center;
-      border-bottom: grey 3px solid ;
-      .navlink{
-        text-decoration: none;
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
-        color: vars.$text-purple;
-        font-size: 1.5rem;
-        padding: 0.4rem 0.6rem 0rem 0.9rem;
-      }
-      .navlink:hover{
-        outline: 0px vars.$text-purple solid;
-        border-radius: 5px 5px 0px 0px;
-        background-color: vars.$text-purple;
-        color: honeydew;
-      }
-      .navlinkActive{
-        text-decoration: none;
-        margin-left: 0.3rem;
-        margin-right: 0.3rem;
-        font-size: 1.5rem;
-        padding: 0.4rem 0.6rem 0rem 0.9rem;
-        outline: 0px vars.$text-purple solid;
-        border-radius: 5px 5px 0px 0px;
-        background-color: vars.$text-purple;
-        color: honeydew;
-      }
+    .navlink:hover{
+      outline: 0px vars.$text-purple solid;
+      border-radius: 5px 5px 0px 0px;
+      background-color: vars.$text-purple;
+      color: honeydew;
+    }
+    .navlinkActive{
+      text-decoration: none;
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
+      font-size: 1.5rem;
+      padding: 0.4rem 0.6rem 0rem 0.9rem;
+      outline: 0px vars.$text-purple solid;
+      border-radius: 5px 5px 0px 0px;
+      background-color: vars.$text-purple;
+      color: honeydew;
     }
   }
 //****main****//

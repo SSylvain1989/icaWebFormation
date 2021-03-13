@@ -29,7 +29,7 @@ export default function Home () {
             <div>
               <li><span><IoIosLaptop/></span>
               <h4>Formations en ligne</h4>
-                <p>Formez-vous au travail ou en télétravail</p>
+                <p>Formez-vous sur votre lieu de travail ou en télétravail</p>
               </li>
               <li><FaRegClock id={styles.clockIcon}/>
               <h4>On s'adapte à votre emploi du temps</h4>
