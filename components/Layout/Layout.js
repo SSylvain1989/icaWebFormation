@@ -23,39 +23,45 @@ export default function Layout({ children, page }) {
         <meta name="description" content="ICA Web Formation vous forme sur toute la partie instrumentation , Atex ou encore régulation , et tout ça en ligne"/>
         {/* c'est ici qu'on mettra nos balise meta pour le SEO / référencement naturel */}
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         </style>
       </Head>
       {/* là aussi une balise header comme en html , donc qui représente le header de notre page */}
       <header className={styles.header}>
-        <div className={styles.container}>
-            <Link href="/">
-              <a id={styles.logolink} href="/">
-          <div className={styles.container__wrapper}>
-                <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
-                {/* <Link href="/">
-                  <a href="/"> */}
-                <h1 className={styles.container__title}>ICA WebFormation</h1>
-                {/* </a>
-                </Link> */}
-          </div>
-            </a>
-            </Link>
-          <div className={styles.container__keyWord}>
-        <p>Instrumentation<br/>
-          Contrôle-commande<br/>
-        Directives ATEX</p>
-          </div>
+        <div className={styles.header__container}>
+            <div className={styles.header__contact}>
+                  <a href="tel:+33644073309">+33 6 44 07 33 09</a>
+                  <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
+            </div>
+            <div>
+                  <h2 className={styles.header__h2}>Formation <span className={styles.text}></span> à distance avec formateur en ligne</h2>
+            </div>
+            <div className={styles.header__keyWord}>
+                  <p>Instrumentation<br/>
+                        Contrôle-commande<br/>
+                        Directives ATEX</p>
+              </div>
         </div>
-        <div className={styles.contact}>
-          <a href="tel:+33644073309">+33 6 44 07 33 09</a>
-          <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
+        <div className={styles.header__button}>
+        <button>Nos formations</button>
+        <button>Nos tarifs</button>
+        <button>S'inscrire</button>
         </div>
-          <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
-        {/* *** nav *** */}
         </header>
+
+
+        {/* *** nav *** */}
+        
+
         <div className={styles.navBar}>
         <nav>
+        <Link href="/">
+              <a className={styles.navlink} href="/">
+                <img src="/images/ica-logo.png" alt="ica-logo" width="45" height="40" />
+                ICA WebFormation
+                {/* <h1 className={styles.navBar__title}>ICA WebFormation</h1> */}
+            </a>
+            </Link>
           
           <Link href="/">
             <a className={router.pathname ==="/" ? styles.navlinkActive : styles.navlink}>
