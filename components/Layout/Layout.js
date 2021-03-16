@@ -23,7 +23,7 @@ export default function Layout({ children, page }) {
         <meta name="description" content="ICA Web Formation vous forme sur toute la partie instrumentation , Atex ou encore régulation , et tout ça en ligne"/>
         {/* c'est ici qu'on mettra nos balise meta pour le SEO / référencement naturel */}
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         </style>
       </Head>
       {/* là aussi une balise header comme en html , donc qui représente le header de notre page */}
@@ -33,11 +33,7 @@ export default function Layout({ children, page }) {
               <a id={styles.logolink} href="/">
           <div className={styles.container__wrapper}>
                 <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
-                {/* <Link href="/">
-                  <a href="/"> */}
                 <h1 className={styles.container__title}>ICA WebFormation</h1>
-                {/* </a>
-                </Link> */}
           </div>
             </a>
             </Link>

@@ -31,16 +31,18 @@
         margin: 1rem 19rem 0.2rem 1rem;
       }&__title{
         // border: green 3px solid;
-        font-size: 2.5rem;
+        font-size: 2.9rem;
         font-weight: 700;
         color: vars.$text-purple;
       }&__keyWord{
         width: 39%;
         color: vars.$text-purple;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin: 0.5rem 1rem 0rem 15rem;
+        margin: 0.9rem 1rem 0rem 26rem;
         height: 9rem;
+        p{
+          font-size: 1.3rem;
+          font-weight:bold;
+        }
       }
     }
     .contact{ // partie basse du header
@@ -61,9 +63,9 @@
       }
     }
     img{
-      margin: 0.3rem 1.2rem;
-      width: 50px;
-      height: 50px;
+      margin: 0.8rem 1.2rem;
+      width: 40px;
+      height: 40px;
     }   
   }
   .navBar{
