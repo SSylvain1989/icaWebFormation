@@ -84,7 +84,7 @@
     width: 100%;
     max-width: 100%;
     text-align: center;
-    border-bottom: grey 3px solid ;
+    border-bottom: vars.$text-yellow 3px solid ;
     background-color: white;
     .navlink{
       text-decoration: none;
@@ -114,6 +114,7 @@
   }
 //****main****//
 main{
+  
 }
   //****footer****//
   .footerContainer{

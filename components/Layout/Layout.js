@@ -27,26 +27,33 @@ export default function Layout({ children, page }) {
         </style>
       </Head>
       {/* là aussi une balise header comme en html , donc qui représente le header de notre page */}
+
       <header className={styles.header}>
         <div className={styles.container}>
+
             <Link href="/">
               <a id={styles.logolink} href="/">
+
           <div className={styles.container__wrapper}>
                 <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
                 <h1 className={styles.container__title}>ICA WebFormation</h1>
           </div>
             </a>
             </Link>
+
           <div className={styles.container__keyWord}>
         <p>Instrumentation<br/>
           Contrôle-commande<br/>
         Directives ATEX</p>
           </div>
+
         </div>
+
         <div className={styles.contact}>
           <a href="tel:+33644073309">+33 6 44 07 33 09</a>
           <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
         </div>
+        
           <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
         {/* *** nav *** */}
         </header>

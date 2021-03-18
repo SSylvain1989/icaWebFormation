@@ -29,7 +29,10 @@ export default function Home () {
       <Layout page='ICA - Web Formation'>
         <div className={styles.description}>
           <div className={styles.description__header} data-aos="fade-up">
-            <div>
+            
+
+
+              <div className={styles.description__icon}>
                 <ScrollLink
                 to="advantages"            
                 spy
@@ -42,6 +45,8 @@ export default function Home () {
                 <p>Formez-vous sur votre lieu de travail ou en télétravail</p>
               </li>
               </ScrollLink>
+              </div>
+              <div>
               <ScrollLink
                 to="advantages"            
                 spy
@@ -53,7 +58,13 @@ export default function Home () {
               <h4>On s'adapte à votre emploi du temps</h4>
                 <p>Un formateur est à disposition selon votre fuseau horaire </p>
               </li>
+              
+              
               </ScrollLink>
+              </div>
+
+
+              <div>
               <Link href="/quisommesnous">
                 <a>
               <li><BiUserCheck id={styles.formateurIcon}/>
@@ -62,7 +73,9 @@ export default function Home () {
               </li>
               </a>
               </Link>
-            </div>
+              </div>
+              
+            
           </div>
           <p className={styles.wrapper}>
             <Image className={styles.img} src="/images/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
