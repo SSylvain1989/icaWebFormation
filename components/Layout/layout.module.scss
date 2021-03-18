@@ -4,24 +4,32 @@
   text-decoration: none;
 }
 
+.imgbgr {
+  position: absolute;
+  z-index: 1;
+}
+
 .layoutContainer {
   // border: green solid 5px;
   display: flex;
   flex-direction: column;
 
+
+
   .header {
     // tout le header
-    padding: 10px 40px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: row;
     position: sticky;
     top: 0;
     z-index: 999;
-    height: 70px;
+    height: 110px;
     -webkit-box-shadow: 0px 10px 14px -1px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0px 10px 14px -1px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 10px 14px -1px rgb(0 0 0 / 10%);
-    background: #ffffff;
+    background: rgb(235, 232, 232);
+    // background: opacity 0.2em;
 
     .left {
       display: flex;
@@ -112,7 +120,7 @@
       text-decoration: none;
       margin-left: 0.1rem;
       margin-right: 0.1rem;
-      color: black;
+      color: vars.$text-purple;
       font-size: 1.2rem;
       padding: 0.4rem 0.6rem 0rem 0.9rem;
       outline: 0px vars.$text-purple solid;
@@ -130,6 +138,8 @@
       margin-left: 0.3rem;
       margin-right: 0.3rem;
       font-size: 1.2rem;
+      font-weight: 700;
+      border-bottom: 3px solid vars.$text-purple;
       padding: 0.4rem 0.6rem 0rem 0.9rem;
       outline: 0px vars.$text-purple solid;
       color: vars.$text-purple;

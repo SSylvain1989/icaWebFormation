@@ -27,9 +27,11 @@ export default function Home () {
   return(
     <div >
       <Layout page='ICA - Web Formation'>
+      {/* <img className={styles.imgbgr} src="/images/header.jpeg" alt="" width="100%" height="900px"/> */}
         <div className={styles.description}>
-        <h2 className={styles.description__title}>Formation  <span className={styles.text}></span> à distance avec formateur en ligne
+        <h2 className={styles.description__title}>Formations   <span className={styles.text}></span>   à distance avec formateur en ligne
         </h2>
+        {/* <h2 className={styles.description__title}>Decouvrez l'offre d' ICA WebFormation </h2> */}
         
           <div className={styles.description__header} data-aos="fade-up">
             
@@ -45,7 +47,9 @@ export default function Home () {
               > 
               <li><span><IoIosLaptop/></span>
               <h4>Formations en ligne</h4>
-                <p>Formez-vous sur votre lieu de travail ou en télétravail</p>
+                <p>Votre visioformation où que vous soyez. Tarif dégressif dès la 2ème personne pour la même formation</p>
+                <p> </p>
+                <p></p>
               </li>
               </ScrollLink>
               </div>
@@ -59,7 +63,7 @@ export default function Home () {
               > 
               <li><FaRegClock id={styles.clockIcon}/>
               <h4>On s'adapte à votre emploi du temps</h4>
-                <p>Un formateur est à disposition selon votre fuseau horaire </p>
+                <p>Un formateur est à disposition selon votre fuseau horaire. Des modules de 1h30 à 3 heures </p>
               </li>
               
               
@@ -72,7 +76,7 @@ export default function Home () {
                 <a>
               <li><BiUserCheck id={styles.formateurIcon}/>
               <h4>Un formateur certifié</h4>
-              <p>Un formateur reconnu , expérimenté et certifié </p>
+              <p>Un formateur reconnu, expérimenté, certifié avec 38 ans d'expériences !  </p>
               </li>
               </a>
               </Link>
@@ -80,6 +84,7 @@ export default function Home () {
               
             
           </div>
+
           <p className={styles.wrapper}>
             <Image className={styles.img} src="/images/learning1.jpeg" alt="un ordinateur" width="480px" height="250px"/>
           </p>
