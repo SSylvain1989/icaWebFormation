@@ -13,6 +13,9 @@ import styles from "../styles/index.module.scss";
 import instrumentation from '../data/instrumentation.js';
 import atex from '../data/atex.js';
 import regulation from '../data/regulation.js';
+import { Link as ScrollLink } from 'react-scroll';
+import Link from'next/link';
+
 
 
 
@@ -25,20 +28,40 @@ export default function Home () {
     <div >
       <Layout page='ICA - Web Formation'>
         <div className={styles.description}>
-          <div className={styles.description__header}>
+          <div className={styles.description__header} data-aos="fade-up">
             <div>
+                <ScrollLink
+                to="advantages"            
+                spy
+                smooth
+                offset={0}
+                duration={900}
+              > 
               <li><span><IoIosLaptop/></span>
               <h4>Formations en ligne</h4>
                 <p>Formez-vous sur votre lieu de travail ou en télétravail</p>
               </li>
+              </ScrollLink>
+              <ScrollLink
+                to="advantages"            
+                spy
+                smooth
+                offset={0}
+                duration={900}
+              > 
               <li><FaRegClock id={styles.clockIcon}/>
               <h4>On s'adapte à votre emploi du temps</h4>
                 <p>Un formateur est à disposition selon votre fuseau horaire </p>
               </li>
+              </ScrollLink>
+              <Link href="/quisommesnous">
+                <a>
               <li><BiUserCheck id={styles.formateurIcon}/>
               <h4>Un formateur certifié</h4>
               <p>Un formateur reconnu , expérimenté et certifié </p>
               </li>
+              </a>
+              </Link>
             </div>
           </div>
           <p className={styles.wrapper}>
@@ -57,19 +80,19 @@ export default function Home () {
           Les apprenants visualisent le formateur à distance et le contenu de la formation soit sur leur micro-ordinateur soit par vidéo-conférence.</p>
           </div>
           <section  className={styles.sectionFormations}>
-            <h2 className={styles.subtitle}>Domaines de formations :</h2>
+            <h2 className={styles.subtitle}>Domaines de formation :</h2>
             <article className={styles.sectionFormations__article}>
               <div className={styles.sectionFormations__table}>
                 <button onClick={() =>{ setData(instrumentation),setTypeFormation('INSTRUMENTATION')}}
-                      >Instrumentation</button>
+                      className={data === instrumentation ? styles.active : ''}>Instrumentation</button>
                 <button onClick={() => {setData(regulation),setTypeFormation('REGULATION')}}
-                      >Regulation</button>
+                      className={data === regulation ? styles.active : ''}>CONTRÔLE-COMMANDE / RÉGULATION</button>
                 <button onClick={() => {setData(atex),setTypeFormation('ATEX')}}
-                      >ATEX</button>
+                      className={data === atex ? styles.active : ''} >ATEX</button>
               </div>
               <Formations data={data} typeFormation={typeFormation}/>
             </article>
-              <h3 >Quels sont les avantages de nos formations à distance ? </h3>
+              <h3 id="advantages" className={styles.advantages}>Quels sont les avantages de nos formations à distance ? </h3>
               <ul>
                   <li>Des formations avec un expert reconnu	</li>
                   <li>Des formations adaptées à votre rythme :	</li>

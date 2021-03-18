@@ -86,11 +86,10 @@ export default function Layout({ children, page }) {
       </main>
       {/* voir comment fixer le footer en bas sans qu'il dépasse */}
       <footer className={styles.footerContainer}>
-          {/* div footer_about */}
           <div className={styles.about}>
           <Link href="/">
             <a className={styles.about__link}>
-              Ica - Web Formation
+              Ica WebFormation
             </a>
           </Link>
             <p className={styles.about__text}>Agrément de formateur d'adultes N° 2019/0311</p>
@@ -122,13 +121,6 @@ export default function Layout({ children, page }) {
             </a>
           </Link>
             </li>
-            {/* <li>
-            <Link href="/formations">
-            <a className={styles.map__link}>
-              Nos formations
-            </a>
-          </Link>
-            </li> */}
             <li>
             <Link href="/inscription">
             <a className={styles.map__link}>
@@ -151,26 +143,6 @@ export default function Layout({ children, page }) {
               </Link>
             </li>
           </ul>
-          {/* div footer_network */}
-          {/* <div className={styles.social}>
-            <span>Suivez-nous</span>
-            <ul>
-            <li>
-            <Link href="/contact">
-                <a className={styles.social__link}>
-                  Linkedin
-                </a>
-              </Link>
-            </li>
-            <li>
-            <Link href="/contact">
-                <a className={styles.social__link}>
-                  Facebook
-                </a>
-              </Link>
-            </li>
-            </ul>
-          </div> */}
       </footer>
     </div>
   );

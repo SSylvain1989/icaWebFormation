@@ -114,28 +114,28 @@
   }
 //****main****//
 main{
-  padding:2rem
 }
   //****footer****//
   .footerContainer{
     padding: 0rem 5rem;
     width: 100%;
-    height: 16rem;
+    height: 13rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: whitesmoke;
     .about{
-      padding-top: 1.1rem;
+      padding-top: 1rem;
       width: 48%;
       text-align: center;
       font-weight: bold;
       color: vars.$text-purple;
       &__text{
         font-weight: normal;
+        font-size:0.8rem;
       }&__link{
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
       }
       &__link:hover{
         border-bottom: vars.$text-purple solid 1px;
@@ -151,11 +151,15 @@ main{
     }
     .map{
       width: 48%;
-      line-height: 1.8rem;
       text-align: center;
       list-style: none;
       font-weight: bold;
+      li{
+        margin: 0;
+        line-height:1.8rem;
+      }
       a{
+        font-size: 0.8rem;
         text-decoration: none;
         color: vars.$text-purple;
       }

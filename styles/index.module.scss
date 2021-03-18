@@ -8,18 +8,20 @@ border-radius: 5px;
   height: fit-content;
   padding-bottom: 1rem;
   &__header{
-    background-color:#F8F9F9;
-
     width: 100%;
     div{
       display: flex;
     flex-direction: row;
     justify-content: space-around;
-    li{
+    a{
+      cursor: pointer;
       text-align: center;
       list-style: none;
       width: 33%;
       padding: 0rem 1.5rem;
+      color: black;
+      text-decoration: none;
+      margin: 2rem 0rem 5rem 0rem;
       svg{
         border: 1px solid vars.$text-purple;
         background-color: vars.$text-purple;
@@ -67,19 +69,19 @@ border-radius: 5px;
     font-size: 1.5rem;
     font-weight: 700;
   button{
-      border: 1px vars.$text-purple solid;
+      border: 2px vars.$text-purple solid;
       border-radius: 5px;
       padding: 0.5rem;
       color: vars.$text-purple;
       width: 15rem;
-      height: 2.5rem;
+      height: 3.2rem;
       text-align: center;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: 0.9rem;
       background-color: white;
     }
-    :focus{
+    .active{
       background-color: vars.$text-purple;
       outline: none;
       color: white;
@@ -88,8 +90,11 @@ border-radius: 5px;
 }
 .subtitle{
   width: fit-content;
-  margin: 6rem auto 3rem auto;
+  margin: 1rem auto 3rem auto;
   border-bottom: 1px black solid;
+}
+
+.advantages{
 }
 
 @media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
@@ -99,7 +104,7 @@ border-radius: 5px;
       padding-bottom: 18rem;
     }  button{
       width: 12rem;
-      height: 2.1rem;
+      height: 3rem;
       font-size: 0.9rem;
     }
   }
