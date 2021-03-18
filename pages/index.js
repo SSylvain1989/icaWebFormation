@@ -27,7 +27,7 @@ export default function Home () {
   return(
     <div >
       <Layout page='ICA - Web Formation'>
-      {/* <img className={styles.imgbgr} src="/images/header.jpeg" alt="" width="100%" height="900px"/> */}
+      <img className={styles.imgbgr} src="/images/header22.jpg" alt="" width="100%" height="95%"/>
         <div className={styles.description}>
         <h2 className={styles.description__title}>Formations   <span className={styles.text}></span>   à distance avec formateur en ligne
         </h2>
