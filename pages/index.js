@@ -28,6 +28,9 @@ export default function Home () {
     <div >
       <Layout page='ICA - Web Formation'>
         <div className={styles.description}>
+        <h2 className={styles.description__title}>Formation  <span className={styles.text}></span> à distance avec formateur en ligne
+        </h2>
+        
           <div className={styles.description__header} data-aos="fade-up">
             
 

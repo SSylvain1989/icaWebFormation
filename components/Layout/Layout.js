@@ -10,6 +10,9 @@ import Link from "next/link";
 import {useRouter} from "next/router";
 import Image from "next/image";
 import styles from './layout.module.scss';
+import { BiPhone } from "react-icons/bi";
+import { HiMail } from "react-icons/hi"
+
 
 
 export default function Layout({ children, page }) {
@@ -31,33 +34,23 @@ export default function Layout({ children, page }) {
       <header className={styles.header}>
         <div className={styles.container}>
 
+            <div className={styles.left}>
             <Link href="/">
               <a id={styles.logolink} href="/">
-
-          <div className={styles.container__wrapper}>
-                <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
-                <h1 className={styles.container__title}>ICA WebFormation</h1>
-          </div>
-            </a>
+                      <div className={styles.container__wrapper}>
+                            <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
+                            <h1 className={styles.container__title}>ICA WebFormation</h1>
+                      </div>
+              </a>
             </Link>
 
-          <div className={styles.container__keyWord}>
-        <p>Instrumentation<br/>
-          Contrôle-commande<br/>
-        Directives ATEX</p>
-          </div>
-
+            <div className={styles.contact}>
+          <a href="tel:+33644073309">+33 6 44 07 33 09 <BiPhone/></a>
+          <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr <HiMail/></a>
+        </div>
         </div>
 
-        <div className={styles.contact}>
-          <a href="tel:+33644073309">+33 6 44 07 33 09</a>
-          <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
-        </div>
-        
-          <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
-        {/* *** nav *** */}
-        </header>
-        <div className={styles.navBar}>
+            <div className={styles.navBar}>
         <nav>
           
           <Link href="/">
@@ -87,6 +80,21 @@ export default function Layout({ children, page }) {
           </Link>
         </nav>
         </div>
+
+          <div className={styles.container__keyWord}>
+                <p>Instrumentation<br/>
+                  Contrôle-commande<br/>
+                Directives ATEX</p>
+          </div>
+
+        </div>
+
+
+        
+          
+        {/* *** nav *** */}
+        </header>
+        
       
       <main className={styles.mainContainer}> 
       {children}
