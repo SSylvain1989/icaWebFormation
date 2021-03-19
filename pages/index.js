@@ -56,7 +56,7 @@ export default function Home () {
               > 
               <li><FaRegClock id={styles.clockIcon}/>
               <h4>On s'adapte à votre emploi du temps</h4>
-                <p>Un formateur est à disposition selon votre fuseau horaire </p>
+                <p>Un formateur est à disposition <strong>selon votre fuseau horaire</strong>. </p>
               </li>
               
               

@@ -30,18 +30,22 @@ export default function Layout({ children, page }) {
 
       <header className={styles.header}>
         <div className={styles.container}>
-
+            <div className={styles.headerDiv}>
             <Link href="/">
               <a id={styles.logolink} href="/">
+                  <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
+                  <h1 className={styles.container__title}>ICA WebFormation</h1>
+              </a>
+              </Link>
+                <a href="tel:+33644073309">+33 6 44 07 33 09</a>
+                <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
+              </div>
 
-          <div className={styles.container__wrapper}>
-                <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
-                <h1 className={styles.container__title}>ICA WebFormation</h1>
-          </div>
-            </a>
-            </Link>
+        <div className={styles.headerDiv}>
+        <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
+        </div>
 
-          <div className={styles.container__keyWord}>
+          <div className={styles.headerDiv}>
         <p>Instrumentation<br/>
           Contrôle-commande<br/>
         Directives ATEX</p>
@@ -49,12 +53,6 @@ export default function Layout({ children, page }) {
 
         </div>
 
-        <div className={styles.contact}>
-          <a href="tel:+33644073309">+33 6 44 07 33 09</a>
-          <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
-        </div>
-        
-          <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
         {/* *** nav *** */}
         </header>
         <div className={styles.navBar}>
@@ -96,7 +94,7 @@ export default function Layout({ children, page }) {
           <div className={styles.about}>
           <Link href="/">
             <a className={styles.about__link}>
-              Ica WebFormation
+              ICA WebFormation
             </a>
           </Link>
             <p className={styles.about__text}>Agrément de formateur d'adultes N° 2019/0311</p>
@@ -108,23 +106,31 @@ export default function Layout({ children, page }) {
           {/* div footer_map */}
           <ul className={styles.map}>
             <li>
+              <Link href="/contact">
+                <a className={styles.map__link}>
+                  Contact
+                </a>
+              </Link>
+            </li>
+            <li>
             <Link href="/plandusite">
             <a className={styles.map__link}>
               Plan du site
             </a>
           </Link>
             </li>
-            <li>
             <Link href="/Mentionslegales">
             <a className={styles.map__link}>
               Mentions légales
             </a>
           </Link>
-            </li>
+          </ul>
+
+          <ul className={styles.map}>
             <li>
-            <Link href="/apropos">
+            <Link href="/nosformations">
             <a className={styles.map__link}>
-              Qui sommes nous
+              Nos formations
             </a>
           </Link>
             </li>
@@ -136,18 +142,18 @@ export default function Layout({ children, page }) {
           </Link>
             </li>
             <li>
+            <Link href="/apropos">
+            <a className={styles.map__link}>
+              Qui sommes nous
+            </a>
+          </Link>
+            </li>
+            <li>
             <Link href="/references">
             <a className={styles.map__link}>
               Nos références
             </a>
           </Link>
-            </li>
-            <li>
-              <Link href="/contact">
-                <a className={styles.map__link}>
-                  Contact
-                </a>
-              </Link>
             </li>
           </ul>
       </footer>

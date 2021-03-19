@@ -1,92 +1,109 @@
 @use '/styles/vars';
 
-#logolink{
+#logolink {
   text-decoration: none;
 }
 
-.layoutContainer{
+.layoutContainer {
   // border: green solid 5px;
   display: flex;
   flex-direction: column;
-  margin-left: 60rem;
-  margin-right: 60rem;
-  .header{ // tout le header
 
-    &__h2{
-    text-align: center;
-    padding-left: 2rem;
-    color: vars.$text-purple;
-    }
-    .container{ // juste le container du haut sans contact
+
+  .header {
+    // tout le header sans la nav
+
+    // border: solid 1px red;
+    height: 120px;
+    padding: 5px 40px 0px 40px;
+
+
+
+    .container {
+      // juste le container du haut sans contact
       // border: red 1px solid;
       display: flex;
       flex-direction: row;
-      height: 6rem;
-      &__wrapper{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        // border: green 1px solid;
-        height: fit-content;
-        margin: 1rem 19rem 0.2rem 1rem;
-      }&__title{
-        // border: green 3px solid;
+      justify-content: space-between;
+
+      &__logo {
+        margin-top: 0px;
+        border: orange 3px solid;
+        min-width: 33%;
+      }
+
+      &__title {
+        margin-top: 0px;
+        border: orange 3px solid;
+        min-width: 33%;
+      }
+
+      &__keywords {
+        margin-top: 0px;
+        border: orange 3px solid;
+        min-width: 33%;
+      }
+
+      &__title {
+        border: yellow 3px solid;
         font-size: 2.9rem;
         font-weight: 700;
         color: vars.$text-purple;
-      }&__keyWord{
-        width: 39%;
-        color: vars.$text-purple;
-        margin: 0.9rem 1rem 0rem 26rem;
-        height: 9rem;
-        p{
-          font-size: 1.3rem;
-          font-weight:bold;
-        }
       }
     }
-    .contact{ // partie basse du header
-      margin: 0rem 1rem 1.5rem 5rem;
+
+    .contact {
+      // partie basse du header
+      // border: black 3px solid;
+      margin: 0rem 1rem 0rem 5rem;
       display: flex;
       flex-direction: column;
       color: vars.$text-purple;
       font-weight: 700;
-      a{
+
+      a {
         font-weight: bold;
         text-decoration: none;
         color: vars.$text-purple;
         width: fit-content;
 
       }
-      a:hover{
+
+      a:hover {
         border-bottom: vars.$text-purple solid 1px;
       }
     }
-    img{
+
+    img {
       margin: 0.8rem 1.2rem;
       width: 40px;
       height: 40px;
-    }   
+    }
   }
-  .navBar{
+
+
+  // navbar
+  .navBar {
     position: sticky;
     top: 0;
     height: 5rem;
-    background-color:white;
+    background-color: white;
     padding-top: 2rem;
     z-index: 999;
   }
-  nav{
-    
+
+  nav {
+
     position: sticky;
     top: 0;
     height: 2rem;
     width: 100%;
     max-width: 100%;
     text-align: center;
-    border-bottom: vars.$text-yellow 3px solid ;
+    border-bottom: vars.$text-yellow 3px solid;
     background-color: white;
-    .navlink{
+
+    .navlink {
       text-decoration: none;
       margin-left: 0.1rem;
       margin-right: 0.1rem;
@@ -94,13 +111,15 @@
       font-size: 1.5rem;
       padding: 0.4rem 0.6rem 0rem 0.9rem;
     }
-    .navlink:hover{
+
+    .navlink:hover {
       outline: 0px vars.$text-purple solid;
       border-radius: 5px 5px 0px 0px;
       background-color: vars.$text-purple;
       color: honeydew;
     }
-    .navlinkActive{
+
+    .navlinkActive {
       text-decoration: none;
       margin-left: 0.3rem;
       margin-right: 0.3rem;
@@ -112,204 +131,256 @@
       color: honeydew;
     }
   }
-//****main****//
-main{
-  
-}
+
+  //****main****//
+  .mainContainer {}
+
   //****footer****//
-  .footerContainer{
+  .footerContainer {
+    margin-top: 4rem;
     padding: 0rem 5rem;
     width: 100%;
-    height: 13rem;
+    height: 8.8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: whitesmoke;
-    .about{
+
+    p {
+      padding: 0;
+      margin: 2px;
+    }
+
+
+
+    .about {
       padding-top: 1rem;
       width: 48%;
       text-align: center;
       font-weight: bold;
       color: vars.$text-purple;
-      &__text{
+
+      &__text {
         font-weight: normal;
-        font-size:0.8rem;
-      }&__link{
+        font-size: 0.8rem;
+
+
+
+      }
+
+      &__link {
         text-decoration: none;
         font-size: 0.8rem;
       }
-      &__link:hover{
+
+      &__link:hover {
         border-bottom: vars.$text-purple solid 1px;
       }
-      a{
+
+      a {
         font-weight: bold;
         text-decoration: none;
         color: vars.$text-purple;
       }
-      a:hover{
+
+      a:hover {
         border-bottom: vars.$text-purple solid 1px;
       }
     }
-    .map{
+
+    .map {
       width: 48%;
       text-align: center;
       list-style: none;
       font-weight: bold;
-      li{
+
+      li {
         margin: 0;
-        line-height:1.8rem;
+        line-height: 1.2rem;
+        padding: 0;
       }
-      a{
+
+      a {
         font-size: 0.8rem;
         text-decoration: none;
         color: vars.$text-purple;
       }
-      a:hover{
+
+      a:hover {
         border-bottom: vars.$text-purple solid 1px;
       }
     }
   }
 }
 
-@media(min-width: 3073px) and (max-width: 3380px)
-{
-  .layoutContainer{
-  margin-left: 53rem;
-  margin-right: 53rem;
+@media(min-width: 3073px) {
+  .mainContainer {
+    margin: 1.5rem 60rem;
   }
 }
 
-@media(min-width: 2143px) and (max-width: 3073px)
-{
-  .layoutContainer{
-  margin-left: 43rem;
-  margin-right: 43rem;
+@media(min-width: 2143px) and (max-width: 3073px) {
+  .mainContainer {
+    margin: 1.5rem 38rem;
   }
 }
 
-@media(min-width: 1570px) and (max-width: 2143px)
-{
-  .layoutContainer{
-  margin-left: 13rem;
-  margin-right: 13rem;
+@media(min-width: 1570px) and (max-width: 2143px) {
+  .mainContainer {
+    margin: 1.5rem 17rem;
   }
 }
 
-@media(min-width: 1389px) and (max-width: 1570px)
-{
-  .layoutContainer{
-  margin-left: 8rem;
-  margin-right: 8rem;
+
+@media(min-width: 1389px) and (max-width: 1570px) {
+  .mainContainer {
+    margin: 1.5rem 10rem;
   }
 }
 
 
 // tablette 
-@media(min-width: 1024px) and (max-width: 1388px){
-  .layoutContainer{
-    margin-left: 1rem;
-    margin-right: 1rem;
+// tablette 
+@media(min-width: 1024px) and (max-width: 1388px) {
+  .mainContainer {
+    margin: 1.5rem 6rem;
+  }
+}
+
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
+
+  {
+  .mainContainer {
+    margin: 1.5rem 2rem;
+  }
+
+  .header {
+
+    // tout le header
+    h2 {
+      font-size: 25px;
     }
 
-}
-@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
-{
-  .layoutContainer{
-    margin-left: 0rem;
-    margin-right: 0rem;
-    .header{ // tout le header
-      h2{
-        font-size: 25px;
+    .container {
+      // juste le container du haut sans contact
+      height: 8rem;
+
+      &__wrapper {
+        width: 75%;
+        margin: 1rem 0.5rem 4rem 0.5rem;
       }
-    .container{ // juste le container du haut sans contact
-        height: 8rem;
-        &__wrapper{
-          width: 75%;
-          margin: 1rem 0.5rem 4rem 0.5rem;
-        }&__title{
-          font-size: 2.1rem;
-        }&__keyWord{
-          margin: 1.5rem 1rem 0rem 10rem;
-          p{
-            font-size: 1.2rem;
-          }
-        }
+
+      &__title {
+        font-size: 2.1rem;
       }
-      .contact{ // partie basse du header
-        margin: -1rem 1rem 0rem 7rem;
-      }
-      img{
-        width: 65px;
-        height: 80px;
-      }
-      nav{
-        .navlink{
-          font-size: 1.2rem;
-          padding: 0.4rem 0.4rem 0.1rem 0.4rem;
-        }
-        .navlinkActive{
+
+      &__keyWord {
+        margin: 1.5rem 1rem 0rem 10rem;
+
+        p {
           font-size: 1.2rem;
         }
       }
     }
-    .footerContainer{
-      padding: 0rem 3rem;
-      .about{
-        padding-top: 2.1rem;
-        &__text{
-          font-size: 1.1rem;
-        }&__link{
-          font-size: 1.2rem;
-        }
+
+    .contact {
+      // partie basse du header
+      margin: -1rem 1rem 0rem 7rem;
+    }
+
+    img {
+      width: 65px;
+      height: 80px;
+    }
+
+    nav {
+      .navlink {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.4rem 0.1rem 0.4rem;
       }
-      .map{
-        li{
-          font-size: 1.1rem;
-        }
+
+      .navlinkActive {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .footerContainer {
+    padding: 0rem 3rem;
+
+    .about {
+      padding-top: 2.1rem;
+
+      &__text {
+        font-size: 1.1rem;
+      }
+
+      &__link {
+        font-size: 1.2rem;
+      }
+    }
+
+    .map {
+      li {
+        font-size: 1.1rem;
       }
     }
   }
 }
 
+
 @media(min-width: 540px) and (max-width: 766px) // test sur surface duo FINI
-{
-  .layoutContainer{
+
+  {
+  .layoutContainer {
     margin-left: 0rem;
     margin-right: 0rem;
-    .header{ // tout le header
-    .container{ // juste le container du haut sans contact
+
+    .header {
+
+      // tout le header
+      .container {
+        // juste le container du haut sans contact
         height: 8rem;
-        &__wrapper{
+
+        &__wrapper {
           width: 75%;
           margin: 1rem 0.5rem 4rem 0.5rem;
-        }&__title{
+        }
+
+        &__title {
           font-size: 2.5rem;
-        }&__keyWord{
+        }
+
+        &__keyWord {
           margin: 1.5rem 1rem 0rem 10rem;
-          p{
+
+          p {
             font-size: 1.2rem;
           }
         }
       }
-      .contact{ // partie basse du header
+
+      .contact {
+        // partie basse du header
         margin: 0rem 1rem 0rem 7rem;
       }
-      img{
+
+      img {
         width: 75px;
         height: 90px;
       }
-      nav{
-        .navlink{
+
+      nav {
+        .navlink {
           font-size: 1.2rem;
           padding: 0.4rem 0.4rem 0.1rem 0.4rem;
         }
-        .navlinkActive{
+
+        .navlinkActive {
           font-size: 1.2rem;
         }
       }
     }
   }
 }
-
-
-
