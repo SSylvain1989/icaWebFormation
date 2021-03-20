@@ -1,14 +1,15 @@
 @use '/styles/vars';
 
-.formationsBis{
-height: 30rem;
+.formationsBis {
+  height: 30rem;
 }
 
-.formations{
+.formations {
   height: 42rem;
   margin-bottom: 1rem;
   text-align: center;
-  &__table{
+
+  &__table {
     width: 100%;
     max-width: 100%;
     font-size: 0.7rem;
@@ -17,68 +18,94 @@ height: 30rem;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 17px rgba(0, 0, 0, 0.50);
-  }&__generic{
+  }
+
+  &__generic {
     caption-side: bottom;
     font-size: 16px;
     font-weight: 700;
     padding: 1rem 0rem;
-  }&__atex{
+  }
+
+  &__atex {
     font-size: 16px;
     padding: 1rem 0rem 1.6rem 0rem;
     font-weight: bold;
-    text-align:left;
-  }&__tfoot{
+    text-align: left;
+  }
+
+  &__tfoot {
     caption-side: bottom;
     font-size: 16px;
     padding: 0.9rem 0rem 0rem 0rem;
     font-weight: bold;
-  }&__thead{
+  }
+
+  &__thead {
     background-color: vars.$text-purple;
     margin-bottom: 5px;
     color: #f3f3f3;
     font-size: 0.9rem;
-    &__th{
+
+    &__th {
       padding: 9px 5px;
-    }&__title{
+    }
+
+    &__title {
       padding: 20px 5px;
       border-bottom: 1px solid #dddd;
     }
-  }&__tr{
+  }
+
+  &__tr {
     padding: 5px 0px;
     border-bottom: 1px solid #dddd;
-  }&__tr:nth-child(even){
+  }
+
+  &__tr:nth-child(even) {
     background-color: #f3f3f3;
-  }&__tr:last-child{
+  }
+
+  &__tr:last-child {
     border-bottom: 4px solid vars.$text-purple;
-  }&__tr:hover{
+  }
+
+  &__tr:hover {
     color: vars.$text-purple;
   }
-  &__td{
+
+  &__td {
     font-size: 0.9rem;
     padding: 12px 24px;
-    div{
+
+    div {
       display: flex;
       flex-direction: row;
-      a{
+
+      a {
         padding: 0px 5px;
         text-decoration: none;
         font-size: 1.1rem;
       }
     }
-  }&__tdGreen{
-    color: green;
-  }
-  &__tdRed{
-    color: red;
-  } &__tdOrange{
-    color:orange;
-  }
   }
 
-  @media(max-width: 1570px)
-{
-    .formations{
-      padding: 1rem 0.5rem;
+  &__tdGreen {
+    color: green;
+  }
+
+  &__tdRed {
+    color: red;
+  }
+
+  &__tdOrange {
+    color: vars.$text-yellow;
+  }
+}
+
+@media(max-width: 1570px) {
+  .formations {
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -86,7 +113,7 @@ height: 30rem;
 // {    .formations{
 //   padding: 1rem 0.5rem;
 // }
-  
+
 
 // }
 
@@ -99,12 +126,12 @@ height: 30rem;
 
 // }
 @media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
-{
-  .formations{
+
+  {
+  .formations {
     padding: 0rem;
-    &__table{
-      
-}
+
+    &__table {}
   }
 }
 
@@ -112,10 +139,3 @@ height: 30rem;
 //  {
 
 //  }
-
-
-
-
-
-
-

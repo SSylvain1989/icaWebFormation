@@ -29,29 +29,32 @@ export default function Layout({ children, page }) {
       {/* là aussi une balise header comme en html , donc qui représente le header de notre page */}
 
       <header className={styles.header}>
-        <div className={styles.container}>
-            <div className={styles.headerDiv}>
+            <div className={styles.header__logo}>
             <Link href="/">
+              <div className={styles.header__logo__title}>
               <a id={styles.logolink} href="/">
                   <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80" />
-                  <h1 className={styles.container__title}>ICA WebFormation</h1>
+                  <h1 >ICA WebFormation</h1>
               </a>
-              </Link>
-                <a href="tel:+33644073309">+33 6 44 07 33 09</a>
-                <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
               </div>
 
-        <div className={styles.headerDiv}>
+              </Link>
+              <div className={styles.header__logo__contact}>
+                <a href="tel:+33644073309">+33 6 44 07 33 09</a>
+                <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
+                </div>
+              </div>
+
+        <div className={styles.header__title}>
         <h2 className={styles.header__h2}>Formation à distance avec formateur en ligne</h2>
         </div>
 
-          <div className={styles.headerDiv}>
-        <p>Instrumentation<br/>
+          <div className={styles.header__keywords}>
+        <strong>Instrumentation<br/>
           Contrôle-commande<br/>
-        Directives ATEX</p>
+        Directives ATEX</strong>
           </div>
 
-        </div>
 
         {/* *** nav *** */}
         </header>

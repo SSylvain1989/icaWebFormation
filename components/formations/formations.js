@@ -6,6 +6,15 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation']
   return(  
   <div>
       <div className={styles.formations}>
+      
+      {typeFormation === 'REGULATION'
+      ? <div className={styles.formations__atex}>La régulation suivant le procédé. De l'acquisition des mesures à la commande des sorties.</div>
+      :
+      '' }
+      {typeFormation === 'INSTRUMENTATION'
+      ? <div className={styles.formations__atex}>Du capteur à l'acquisition de la mesure. Du signal de sortie à l'organe de commande.</div>
+      :
+      '' }
       {typeFormation === 'ATEX'
       ? <div className={styles.formations__atex}>Toutes nos formations sur les atmosphères explosives (ATEX) sont basées sur les directives 1999/92/CE et 2014/34/UE.
       Formateur intervenant en zones ATEX, certifié (et recertifié) par l’INERIS niveau 3 électrique et mécanique (non-électrique) tous les 3 ans.</div>

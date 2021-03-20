@@ -42,7 +42,7 @@ export default function Home () {
               > 
               <li><span><IoIosLaptop/></span>
               <h4>Formations en ligne</h4>
-                <p>Formez-vous sur votre lieu de travail ou en télétravail</p>
+                <p>Votre visioformation où que vous soyez. <strong>Tarif dégressif</strong>  dès la 2ème personne pour la même formation</p>
               </li>
               </ScrollLink>
               </div>
@@ -56,7 +56,7 @@ export default function Home () {
               > 
               <li><FaRegClock id={styles.clockIcon}/>
               <h4>On s'adapte à votre emploi du temps</h4>
-                <p>Un formateur est à disposition <strong>selon votre fuseau horaire</strong>. </p>
+                <p>Un formateur est à disposition <strong>selon votre fuseau horaire</strong>. Des modules de 1h30 à 3 heures.</p>
               </li>
               
               
@@ -69,7 +69,8 @@ export default function Home () {
                 <a>
               <li><BiUserCheck id={styles.formateurIcon}/>
               <h4>Un formateur certifié</h4>
-              <p>Un formateur reconnu , expérimenté et certifié </p>
+              <p>Un formateur avec 38ans d'expérience, reconnu, expérimenté et certifié.
+                Déjà de nombreux étudiants formés par notre formateur</p>
               </li>
               </a>
               </Link>
