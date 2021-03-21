@@ -56,7 +56,8 @@ export default function Home () {
               > 
               <li><FaRegClock id={styles.clockIcon}/>
               <h4>On s'adapte à votre emploi du temps</h4>
-                <p>Un formateur est à disposition <strong>selon votre fuseau horaire</strong>. Des modules de 1h30 à 3 heures.</p>
+                <p>Un formateur est à disposition <strong>selon votre fuseau horaire</strong>. </p>
+                <p>Des modules de 1h30 à 3 heures.</p>
               </li>
               
               
@@ -69,8 +70,8 @@ export default function Home () {
                 <a>
               <li><BiUserCheck id={styles.formateurIcon}/>
               <h4>Un formateur certifié</h4>
-              <p>Un formateur avec 38ans d'expérience, reconnu, expérimenté et certifié.
-                Déjà de nombreux étudiants formés par notre formateur</p>
+              <p>Un formateur avec 38ans d'expérience, reconnu, agréé et certifié.
+              Un agrément de <strong>formateur d'adultes</strong> de la DFPC</p>
               </li>
               </a>
               </Link>

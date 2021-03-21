@@ -16,8 +16,14 @@
     flex-direction: row;
     justify-content: space-around;
 
-    &__icon {
+    div {
       width: 30%;
+      padding: 0 2.5rem;
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
     }
 
 
@@ -70,7 +76,7 @@
 
 .sectionFormations {
   &__article {
-    padding-bottom: 5rem;
+    padding-bottom: 0.5rem;
   }
 
   &__table {
@@ -112,16 +118,13 @@
 }
 
 .advantages {
-  padding-top: 8rem;
+  padding-top: 0.5rem;
 }
 
 @media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
 
   {
   .sectionFormations {
-    &__article {
-      padding-bottom: 18rem;
-    }
 
     button {
       width: 12rem;

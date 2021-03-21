@@ -94,38 +94,7 @@
         font-size: 1.2rem;
       }
     }
-
-    // &__title {
-    //   border: yellow 3px solid;
-    //   font-size: 2.9rem;
-    //   font-weight: 700;
-    //   color: vars.$text-purple;
-    // }
-
-
   }
-
-  // .contact {
-  //   // partie basse du header
-  //   // border: black 3px solid;
-  //   margin: 0rem 1rem 0rem 5rem;
-  //   display: flex;
-  //   flex-direction: column;
-  //   color: vars.$text-purple;
-  //   font-weight: 700;
-
-  //   a {
-  //     font-weight: bold;
-  //     text-decoration: none;
-  //     color: vars.$text-purple;
-  //     width: fit-content;
-
-  //   }
-
-  //   a:hover {
-  //     border-bottom: vars.$text-purple solid 1px;
-  //   }
-  // }
 
 
 
@@ -292,87 +261,145 @@
 // tablette 
 // tablette 
 @media(min-width: 1024px) and (max-width: 1388px) {
-  .mainContainer {
-    margin: 1.5rem 6rem;
-  }
-}
+  .layoutContainer {
+    .header {
+      &__logo {
+        &__title {
+          a {
+            h1 {
+              font-size: 1.5rem;
+            }
 
-@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
+            img {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
 
-  {
-  .mainContainer {
-    margin: 1.5rem 2rem;
-  }
-
-  .header {
-
-    // tout le header
-    h2 {
-      font-size: 25px;
-    }
-
-    .container {
-      // juste le container du haut sans contact
-      height: 8rem;
-
-      &__wrapper {
-        width: 75%;
-        margin: 1rem 0.5rem 4rem 0.5rem;
+        &__contact {
+          margin-top: -5px;
+        }
       }
 
       &__title {
-        font-size: 2.1rem;
+        h2 {
+          font-size: 1.1rem;
+        }
       }
 
-      &__keyWord {
-        margin: 1.5rem 1rem 0rem 10rem;
-
-        p {
-          font-size: 1.2rem;
+      &__keywords {
+        strong {
+          font-size: 1rem;
         }
       }
     }
 
-    .contact {
-      // partie basse du header
-      margin: -1rem 1rem 0rem 7rem;
-    }
-
-    img {
-      width: 65px;
-      height: 80px;
+    .mainContainer {
+      margin: 1.5rem 2rem;
     }
 
     nav {
+      height: 1.75rem;
+
       .navlink {
-        font-size: 1.2rem;
-        padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+        font-size: 1.3rem;
       }
 
       .navlinkActive {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+      }
+    }
+
+    .footerContainer {
+
+      height: 9.2em;
+
+      p {
+        padding: 0;
+        margin: 2px;
+      }
+
+      .about {
+        &__text {
+          font-size: 0.72rem;
+        }
       }
     }
   }
+}
 
-  .footerContainer {
-    padding: 0rem 3rem;
 
-    .about {
-      padding-top: 2.1rem;
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
 
-      &__text {
-        font-size: 1.1rem;
+  {
+  .layoutContainer {
+    .header {
+      padding: 5px 10px;
+      height: 85px;
+
+      &__logo {
+        &__title {
+          a {
+            h1 {
+              font-size: 1.2rem;
+            }
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        &__contact {
+          font-size: 0.8rem;
+          margin-top: -15px;
+        }
       }
 
-      &__link {
-        font-size: 1.2rem;
+      &__title {
+        h2 {
+          font-size: 1rem;
+        }
+      }
+
+      &__keywords {
+        strong {
+          font-size: 1rem;
+        }
       }
     }
 
-    .map {
-      li {
-        font-size: 1.1rem;
+    .mainContainer {
+      margin: 1.5rem 0.8rem;
+    }
+
+    nav {
+      height: 1.35rem;
+
+      .navlink {
+        font-size: 0.95rem;
+      }
+
+      .navlinkActive {
+        font-size: 0.95rem;
+      }
+    }
+
+    .footerContainer {
+
+      height: 9.5em;
+
+      p {
+        padding: 0;
+        margin: 2px;
+      }
+
+      .about {
+        &__text {
+          font-size: 0.56rem;
+        }
       }
     }
   }

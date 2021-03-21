@@ -34,7 +34,7 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation']
             <th className={styles.formations__thead__th} rowSpan="2">{`FORMATIONS ${typeFormation}`}</th> 
             <th className={styles.formations__thead__title} colSpan="3">POUR QUI ? </th>
             <th className={styles.formations__thead__th} rowSpan="2">DURÉE </th> 
-            <th className={styles.formations__thead__th} rowSpan="2">RÉPARTITIONS EN MODULES </th> 
+            <th className={styles.formations__thead__th} rowSpan="2">RÉPARTITION EN MODULES </th> 
             <th className={styles.formations__thead__th} rowSpan="2">FICHE FORMATION </th> 
             </tr>
           <tr className={styles.formations__thead__tr}>
