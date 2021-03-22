@@ -24,11 +24,11 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation']
       {typeFormation === 'ATEX' 
       ?
       <>
-      <caption className={styles.formations__generic}> 👉  Formation sur mesure : donnez nous votre objectif sur <a href="mailto:contact@icawebformation.fr" className={styles.about__text}>contact@icawebformation.fr</a>  ou appelez nous au <a href="tel:+33644073309" className={styles.about__text}>+33 644 073 309</a> </caption>
-      <caption className={styles.formations__tfoot}>* Avec ou sans certification de <a href="https://www.ineris.fr/">l’INERIS</a></caption>
+      <caption className={styles.formations__generic}> 👉  Formation sur mesure : donnez nous votre objectif sur <a href="mailto:contact@icawebformation.com" className={styles.about__text}>contact@icawebformation.com</a>  ou appelez nous au <a href="tel:+33644073309" className={styles.about__text}>+33 644 073 309</a> </caption>
+      <caption className={styles.formations__tfoot}>* Avec ou sans certification de <a href="https://www.ineris.com/">l’INERIS</a></caption>
 </>
       :
-      <caption className={styles.formations__generic}>👉  Formation sur mesure : donnez nous votre objectif sur <a href="mailto:contact@icawebformation.fr" className={styles.about__text}>contact@icawebformation.fr</a>  ou appelez nous au <a href="tel:+33644073309" className={styles.about__text}>+33 644 073 309</a> </caption> }
+      <caption className={styles.formations__generic}>👉  Formation sur mesure : donnez nous votre objectif sur <a href="mailto:contact@icawebformation.com" className={styles.about__text}>contact@icawebformation.com</a>  ou appelez nous au <a href="tel:+33644073309" className={styles.about__text}>+33 644 073 309</a> </caption> }
         <thead className={styles.formations__thead}>
           <tr>
             <th className={styles.formations__thead__th} rowSpan="2">{`FORMATIONS ${typeFormation}`}</th> 

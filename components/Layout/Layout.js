@@ -41,7 +41,7 @@ export default function Layout({ children, page }) {
               </Link>
               <div className={styles.header__logo__contact}>
                 <a href="tel:+33644073309">+33 6 44 07 33 09</a>
-                <a href="mailto:contact@icawebformation.fr" >contact@icawebformation.fr</a>
+                <a href="mailto:contact@icawebformation.com" >contact@icawebformation.com</a>
                 </div>
               </div>
 
@@ -81,11 +81,11 @@ export default function Layout({ children, page }) {
               Nos références
             </a>
           </Link>
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <a className={router.pathname ==="/contact" ? styles.navlinkActive : styles.navlink}>
               Contact
             </a>
-          </Link>
+          </Link> */}
         </nav>
         </div>
       
@@ -104,17 +104,17 @@ export default function Layout({ children, page }) {
             <p className={styles.about__text}>SIRET 878 135 896 00016</p>
             <p className={styles.about__text}>Déclaration d'activité 93840418984 </p>
             <a href="tel:+33644073309" className={styles.about__text}></a>
-            <a href="mailto:contact@icawebformation.fr" className={styles.about__text}>contact@icawebformation.fr</a>
+            <a href="mailto:contact@icawebformation.com" className={styles.about__text}>contact@icawebformation.com</a>
           </div>
           {/* div footer_map */}
           <ul className={styles.map}>
-            <li>
+            {/* <li>
               <Link href="/contact">
                 <a className={styles.map__link}>
                   Contact
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li>
             <Link href="/plandusite">
             <a className={styles.map__link}>
