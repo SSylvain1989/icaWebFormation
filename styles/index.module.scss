@@ -16,11 +16,15 @@
     flex-direction: row;
     justify-content: space-around;
 
+    ul {
+      list-style: none;
+    }
+
     div {
       width: 33%;
       padding: 0 1.9rem;
 
-      h4 {
+      h3 {
         padding-bottom: 1.5rem;
       }
 
@@ -126,7 +130,7 @@
   width: fit-content;
   margin: 1rem auto 3rem auto;
   border-bottom: 2px vars.$text-purple solid;
-  color: vars.$text-yellow;
+  color: vars.$text-purple;
 }
 
 .advantages {

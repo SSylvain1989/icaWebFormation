@@ -49,8 +49,8 @@ const columns = ['Bureaux d’étude','Maintenance','Exploitation']
           <tbody className={styles.formations__tbody}>
               {data.map(oneLine => (
                 <tr key={oneLine} className={styles.formations__tr}>
-                        {oneLine.map((oneCell) => (
-                            <td key={oneCell} className={ `${oneCell === 'Adaptée' ? styles.formations__tdGreen : styles.formations__td}
+                        {oneLine.map((oneCell, id) => (
+                            <td key={id} className={ `${oneCell === 'Adaptée' ? styles.formations__tdGreen : styles.formations__td}
                                                                                           ${oneCell === 'Inadaptée' ? styles.formations__tdRed : styles.formations__td}
                                                                                           ${oneCell === 'Préconisée' ? styles.formations__tdOrange : styles.formations__td}`}> 
                               {oneCell}

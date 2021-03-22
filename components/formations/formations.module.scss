@@ -1,9 +1,5 @@
 @use '/styles/vars';
 
-// .formationsBis {
-//   height: 30rem;
-// }
-
 .formations {
   margin-bottom: 1rem;
   text-align: center;
@@ -94,11 +90,11 @@
   }
 
   &__tdRed {
-    color: red;
+    color: rgb(255, 0, 0);
   }
 
   &__tdOrange {
-    color: vars.$text-yellow;
+    color: rgb(255, 166, 0);
   }
 }
 

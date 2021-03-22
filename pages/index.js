@@ -40,12 +40,15 @@ export default function Home () {
                 offset={0}
                 duration={900}
               > 
+              <ul>
               <li><span><IoIosLaptop/></span>
-              <h4>Formations en ligne</h4>
+              <h3>Formations en ligne</h3>
                 <p>Votre visioformation où que vous soyez. <strong>Tarif dégressif</strong>  dès la 2ème personne pour la même formation</p>
               </li>
+              </ul>
               </ScrollLink>
               </div>
+              
               <div>
               <ScrollLink
                 to="advantages"            
@@ -53,24 +56,27 @@ export default function Home () {
                 smooth
                 offset={0}
                 duration={900}
-              > 
+                > 
+                <ul>
               <li><FaRegClock id={styles.clockIcon}/>
-              <h4 id={styles.clocktitle}>On s'adapte à votre emploi du temps</h4>
+              <h3 id={styles.clocktitle}>On s'adapte à votre emploi du temps</h3>
                 <p>Un formateur est à disposition <strong>selon votre fuseau horaire</strong>. </p>
                 <p>Des modules de 1h30 à 3 heures.</p>
-              </li>            
+              </li>
+              </ul>           
               </ScrollLink>
               </div>
-
 
               <div>
               <Link href="/quisommesnous">
                 <a>
+                <ul>
               <li><BiUserCheck id={styles.formateurIcon}/>
-              <h4>Un formateur certifié</h4>
+              <h3>Un formateur certifié</h3>
               <p>Un formateur avec 38ans d'expérience, reconnu, agréé.</p>
               <p>Un agrément de <strong>formateur d'adultes</strong> de la DFPC.</p>
               </li>
+              </ul>
               </a>
               </Link>
               </div>
@@ -93,7 +99,7 @@ export default function Home () {
           Les apprenants visualisent le formateur à distance et le contenu de la formation soit sur leur micro-ordinateur soit par vidéo-conférence.</p>
           </div>
           <section  className={styles.sectionFormations}>
-            <h2 className={styles.subtitle}>Domaines de formation :</h2>
+            <h3 className={styles.subtitle}>Domaines de formation :</h3>
             <article className={styles.sectionFormations__article}>
               <div className={styles.sectionFormations__table}>
                 <button onClick={() =>{ setData(instrumentation),setTypeFormation('INSTRUMENTATION')}}
@@ -106,13 +112,16 @@ export default function Home () {
               <Formations data={data} typeFormation={typeFormation}/>
             </article>
               <h3 id="advantages" className={styles.advantages}>Quels sont les avantages de nos formations à distance ? </h3>
+              
               <ul>
                   <li>Des formations avec un expert reconnu	</li>
                   <li>Des formations adaptées à votre rythme :	</li>
               <ul>
+                <ol>
                   <li>Des horaires adaptés voir modifiables</li>
                   <li>Peu de temps pris pour la formation dans la journée, en général 3 h.</li>
                   <li>Les réponses aux questions sont immédiates et interactives</li>
+                  </ol>
               </ul>
                   <li>Un formateur "présent" qui répond à toutes les questions</li>
                   <li>Des participants qui échangent entre eux	</li>
