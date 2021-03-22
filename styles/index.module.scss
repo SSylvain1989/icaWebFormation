@@ -17,8 +17,12 @@
     justify-content: space-around;
 
     div {
-      width: 30%;
-      padding: 0 2.5rem;
+      width: 33%;
+      padding: 0 1.9rem;
+
+      h4 {
+        padding-bottom: 1.5rem;
+      }
 
       p {
         padding: 0;
@@ -57,6 +61,14 @@
 #clockIcon {
   padding: 0.7rem;
 }
+
+@media (max-width :1108px) {
+  #clocktitle {
+    padding-bottom: 0.3rem;
+  }
+}
+
+
 
 #formateurIcon {
   border: 1px solid vars.$text-purple;

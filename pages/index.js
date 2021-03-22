@@ -55,12 +55,10 @@ export default function Home () {
                 duration={900}
               > 
               <li><FaRegClock id={styles.clockIcon}/>
-              <h4>On s'adapte à votre emploi du temps</h4>
+              <h4 id={styles.clocktitle}>On s'adapte à votre emploi du temps</h4>
                 <p>Un formateur est à disposition <strong>selon votre fuseau horaire</strong>. </p>
                 <p>Des modules de 1h30 à 3 heures.</p>
-              </li>
-              
-              
+              </li>            
               </ScrollLink>
               </div>
 
@@ -70,8 +68,8 @@ export default function Home () {
                 <a>
               <li><BiUserCheck id={styles.formateurIcon}/>
               <h4>Un formateur certifié</h4>
-              <p>Un formateur avec 38ans d'expérience, reconnu, agréé et certifié.
-              Un agrément de <strong>formateur d'adultes</strong> de la DFPC</p>
+              <p>Un formateur avec 38ans d'expérience, reconnu, agréé.</p>
+              <p>Un agrément de <strong>formateur d'adultes</strong> de la DFPC.</p>
               </li>
               </a>
               </Link>
