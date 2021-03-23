@@ -22,9 +22,7 @@ export default function Layout({ children, page }) {
         {/* donc pour bien comprendre quand je serais sur la page "à propos" le titre de l'onglet sera "à propos" grace à la props "page" */}
         <meta name="description" content="ICA Web Formation vous forme sur toute la partie instrumentation , Atex ou encore régulation , et tout ça en ligne"/>
         {/* c'est ici qu'on mettra nos balise meta pour le SEO / référencement naturel */}
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-        </style>
+
       </Head>
       {/* là aussi une balise header comme en html , donc qui représente le header de notre page */}
 
@@ -81,11 +79,6 @@ export default function Layout({ children, page }) {
               Nos références
             </a>
           </Link>
-          {/* <Link href="/contact">
-            <a className={router.pathname ==="/contact" ? styles.navlinkActive : styles.navlink}>
-              Contact
-            </a>
-          </Link> */}
         </nav>
         </div>
       
@@ -108,13 +101,6 @@ export default function Layout({ children, page }) {
           </div>
           {/* div footer_map */}
           <ul className={styles.map}>
-            {/* <li>
-              <Link href="/contact">
-                <a className={styles.map__link}>
-                  Contact
-                </a>
-              </Link>
-            </li> */}
             <li>
             <Link href="/plandusite">
             <a className={styles.map__link}>
@@ -122,7 +108,7 @@ export default function Layout({ children, page }) {
             </a>
           </Link>
             </li>
-            <Link href="/Mentionslegales">
+            <Link href="/mentionslegales">
             <a className={styles.map__link}>
               Mentions légales
             </a>
@@ -131,7 +117,7 @@ export default function Layout({ children, page }) {
 
           <ul className={styles.map}>
             <li>
-            <Link href="/nosformations">
+            <Link href="/">
             <a className={styles.map__link}>
               Nos formations
             </a>
@@ -145,7 +131,7 @@ export default function Layout({ children, page }) {
           </Link>
             </li>
             <li>
-            <Link href="/apropos">
+            <Link href="/quisommesnous">
             <a className={styles.map__link}>
               Qui sommes nous
             </a>
