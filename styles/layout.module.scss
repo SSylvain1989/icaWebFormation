@@ -432,7 +432,7 @@
           a {
             h1 {
 
-              font-size: 1.2rem;
+              font-size: 1.4rem;
             }
 
             img {
@@ -445,13 +445,13 @@
 
       &__title {
         h2 {
-          font-size: 1rem;
+          font-size: 1.3rem;
         }
       }
 
       &__keywords {
         strong {
-          font-size: 1rem;
+          font-size: 1.3rem;
         }
       }
     }
@@ -462,36 +462,17 @@
     }
 
     nav {
-      height: 1.35rem;
+      height: 1.65rem;
 
       .navlink {
-        font-size: 0.95rem;
+        font-size: 1.3rem;
       }
 
       .navlinkActive {
-        font-size: 0.95rem;
-      }
-    }
-
-    .footerContainer {
-      position: fixed;
-      bottom: 0;
-      height: 9.5em;
-
-      p {
-        padding: 0;
-        margin: 2px;
-      }
-
-      .about {
-        &__text {
-          font-size: 0.56rem;
-        }
+        font-size: 1.5rem;
       }
     }
   }
-
-
 
 
 }

@@ -6,16 +6,16 @@ import { FaTv, FaLeanpub, FaRegClock, FaLaptop } from "react-icons/fa";
 import { BiUserCheck } from "react-icons/bi";
 import { CgScreen } from "react-icons/cg";
 import {IoIosLaptop }  from "react-icons/io"
-import Layout from "../components/Layout/Layout.js";
-import Formations from "../components/formations/formations.js";
 import Image from "next/image";
-import styles from "../styles/index.module.scss";
 import instrumentation from '../data/instrumentation.js';
 import atex from '../data/atex.js';
 import regulation from '../data/regulation.js';
 import { Link as ScrollLink } from 'react-scroll';
 import Link from'next/link';
 
+import Formations from "../components/formations/formations.js";
+import Layout from "../components/Layout/Layout.js";
+import styles from "../styles/index.module.scss";
 
 
 
@@ -72,8 +72,8 @@ export default function Home () {
                 <a>
                 <ul>
               <li><BiUserCheck id={styles.formateurIcon}/>
-              <h3>Un formateur certifié</h3>
-              <p>Un formateur avec 38ans d'expérience, reconnu, agréé.</p>
+              <h3>Un formateur agréé</h3>
+              <p>Un formateur avec 38 ans d'expérience, reconnu, agréé.</p>
               <p>Un agrément de <strong>formateur d'adultes</strong> de la DFPC.</p>
               </li>
               </ul>

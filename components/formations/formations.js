@@ -1,4 +1,4 @@
-import styles from './formations.module.scss';
+import styles from '../../styles/formations.module.scss';
 
 export default function Formations ({data, typeFormation}) {
 const columns = ['Bureaux d’étude','Maintenance','Exploitation']
