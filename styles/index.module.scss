@@ -66,7 +66,13 @@
   padding: 0.7rem;
 }
 
-@media (max-width :1108px) {
+@media (max-width :1334px) {
+  #clocktitle {
+    padding-bottom: 0.3rem;
+  }
+}
+
+@media(min-width: 2143px) and (max-width: 3073px) {
   #clocktitle {
     padding-bottom: 0.3rem;
   }
@@ -164,7 +170,8 @@
       }
 
       div {
-        width: 100%;
+        width: 75%;
+        margin: auto;
 
 
         h3 {

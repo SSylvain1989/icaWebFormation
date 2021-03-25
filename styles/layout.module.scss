@@ -121,6 +121,8 @@
     border-bottom: vars.$text-yellow 3px solid;
     background-color: white;
 
+
+
     .navlink {
       text-decoration: none;
       margin-left: 0.1rem;
@@ -423,7 +425,7 @@
 
   {
   .layoutContainer {
-    width: fit-content;
+    width: 903px;
 
     .header {
 
@@ -458,18 +460,18 @@
 
     .mainContainer {
       width: 100%;
-      padding: 0 0.2rem;
+      padding: 0 1.5rem;
     }
 
     nav {
-      height: 1.65rem;
+      height: 1.82rem;
 
       .navlink {
-        font-size: 1.3rem;
+        font-size: 1.45rem;
       }
 
       .navlinkActive {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
       }
     }
   }

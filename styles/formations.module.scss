@@ -148,3 +148,39 @@
 
   }
 }
+
+@media(min-width: 320px) and (max-width: 766px) // test sur surface duo FINI
+
+  {
+
+  .formations {
+
+    &__atex {
+      font-size: 18px;
+
+    }
+
+    &__tfoot {
+
+      font-size: 18px;
+
+    }
+
+    &__thead {
+      font-size: 0.8rem;
+    }
+
+    &__td {
+      font-size: 1rem;
+      padding: 10px 20px;
+
+      div {
+        a {
+
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+  }
+}

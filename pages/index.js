@@ -98,21 +98,21 @@ export default function Home () {
           <p><strong> Les interactions sont permanentes et en direct. </strong> 
           Les apprenants visualisent le formateur à distance et le contenu de la formation soit sur leur micro-ordinateur soit par vidéo-conférence.</p>
           </div>
-          <section  className={styles.sectionFormations}>
-            <h3 className={styles.subtitle}>Domaines de formation :</h3>
-            <article className={styles.sectionFormations__article}>
-              <div className={styles.sectionFormations__table}>
-                <button onClick={() =>{ setData(instrumentation),setTypeFormation('INSTRUMENTATION')}}
-                      className={data === instrumentation ? styles.active : ''}>Instrumentation</button>
-                <button onClick={() => {setData(regulation),setTypeFormation('REGULATION')}}
-                      className={data === regulation ? styles.active : ''}>CONTRÔLE-COMMANDE / RÉGULATION</button>
-                <button onClick={() => {setData(atex),setTypeFormation('ATEX')}}
-                      className={data === atex ? styles.active : ''} >ATEX</button>
-              </div>
+          <div  className={styles.sectionFormations}>
+                          <h3 className={styles.subtitle}>Domaines de formation :</h3>
+                          <article className={styles.sectionFormations__article}>
+                                <div className={styles.sectionFormations__table}>
+                                  <button onClick={() =>{ setData(instrumentation),setTypeFormation('INSTRUMENTATION')}}
+                                        className={data === instrumentation ? styles.active : ''}>Instrumentation</button>
+                                  <button onClick={() => {setData(regulation),setTypeFormation('REGULATION')}}
+                                        className={data === regulation ? styles.active : ''}>CONTRÔLE-COMMANDE / RÉGULATION</button>
+                                  <button onClick={() => {setData(atex),setTypeFormation('ATEX')}}
+                                        className={data === atex ? styles.active : ''} >ATEX</button>
+                                </div>
+                        </article>
+          </div>
               <Formations data={data} typeFormation={typeFormation}/>
-            </article>
               <h3 id="advantages" className={styles.advantages}>Quels sont les avantages de nos formations à distance ? </h3>
-              
               <ul>
                   <li>Des formations avec un expert reconnu	</li>
                   <li>Des formations adaptées à votre rythme :	</li>
@@ -131,7 +131,6 @@ export default function Home () {
                   <li>Pas de coûts induits (hôtel, restauration, etc.)</li>
                   <li>Possibilité de personnaliser la formation avec votre matériel.</li>
               </ul>
-            </section>
       </Layout>
     </div>
   )
