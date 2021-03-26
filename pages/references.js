@@ -7,13 +7,35 @@ export default function References () {
 return(
      <div>
           <Layout page='ICA - Références'>
-          <p>Nombreuses sont les sociétés qui nous ont fait confiance, soit en formation à distance soit en formation en présentiel :</p>
+          <h2>Nombreuses sont les sociétés qui nous ont fait confiance, soit en formation à distance soit en formation en présentiel.</h2>
           <h3>En France :</h3>
-          <p>TOTAL, AUDITRIX, Saint-Gobain, EXXONMOBIL, AIR LIQUIDE, ARKEMA, LYONDELL, SHELL, NESTLE, ARCELORMITTAL, ARJOWIGGINS
-          et d’autres …
+               <p> 
+                    <a href="https://www.total.com/fr" target="_blank">TOTAL</a> ,
+                    <a href="https://www.auditrix.com"target="_blank">AUDITRIX</a>, 
+                    <a href="https://www.saint-gobain.com/fr"target="_blank">Saint-Gobain,
+                    </a>  EXXONMOBIL,
+                    <a href="https://www.airliquide.com/fr"target="_blank">AIR LIQUIDE</a> ,
+                    ARKEMA,
+                    LYONDELL,
+                    <a href="https://www.shell.com"target="_blank">SHELL</a> ,
+                    <a href="https://www.nestle.com"target="_blank">NESTLE</a> ,
+                    ARCELORMITTAL,
+                    ARJOWIGGINS
+               et d’autres …
           </p>
           <h3>En Nouvelle-Calédonie : </h3>
-          <p>CDE (Sté des Eaux), ENERCAL (Producteur et distributeur d'électricité), VALE NC (Usine de traitement de nickel), KNS (Usine de traitement de nickel), SLN (Usine de traitement de nickel), CCI NC, Sté Le Froid (Agroalimentaire), GBNC (Agroalimentaire), NEODYME (Gestion des risques industriels), EEC (Distributeur d’électricité), PACIFIC ENERGY (Fournisseur et stockage d’hydrocarbures).</p> 
+               <p>
+                    <a href="https://cde.nc"target="_blank">CDE (Sté des Eaux)</a> ,
+                    <a href="https://www.enercal.nc"target="_blank">ENERCAL (Producteur et distributeur d'électricité)</a> ,
+                    <a href="http://www.vale.nc"target="_blank">VALE NC (Usine de traitement de nickel), KNS (Usine de traitement de nickel)</a> ,
+                    <a href="https://sln.eramet.com"target="_blank">SLN (Usine de traitement de nickel)</a> , 
+                    CCI NC,
+                    <a href="https://www.lefroid.nc"target="_blank">Sté Le Froid (Agroalimentaire)</a> ,
+                    GBNC (Agroalimentaire),
+                    NEODYME (Gestion des risques industriels),
+                    EEC (Distributeur d’électricité),
+                    <a href="https://p.energy/nouvelle-caledonie/"target="_blank">PACIFIC ENERGY (Fournisseur et stockage d’hydrocarbures)</a> .
+               </p> 
           <h3>A Wallis et Futuna : </h3>
           <p>SWAFEPP (Fournisseur et stockage d’hydrocarbures), VANUATU BREWING Ltd (Brasserie)
           </p>
