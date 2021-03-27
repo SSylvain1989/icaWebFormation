@@ -96,7 +96,7 @@ export default function Layout({ children, page }) {
             <p className={styles.about__text}>Agrément de formateur d'adultes N° 2019/0311</p>
             <p className={styles.about__text}>SIRET 878 135 896 00016</p>
             <p className={styles.about__text}>Déclaration d'activité 93840418984 </p>
-            <a href="tel:+33644073309" className={styles.about__text}></a>
+            <a href="tel:+33644073309" className={styles.about__text}>+33644073309</a> / 
             <a className={styles.about__text} href="mailto:contact@icawebformation.com"  label="email" alt="email"><span className={styles.srOnly}>contact@icawebformation.com</span>contact@icawebformation.com</a>
           </div>
           {/* div footer_map */}
