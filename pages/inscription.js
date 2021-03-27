@@ -14,7 +14,7 @@ export default function Registration () {
       <Layout page='ICA - Inscriptions formations'>
 
           <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/schema.png" alt="formateur" width="700px" height="130px" load="lazy"/>
+            <Image className={styles.img} src="/images/schema.png" alt="formateur" width="810px" height="135px" />
           </div>
 
       <h3>Inscriptions :</h3>
@@ -26,6 +26,9 @@ export default function Registration () {
                 <p>Le suivi pédagogique est constant pendant la formation.
                 Le formateur s'adapte au niveau des participants et répond à toutes les questions.
                 En fin de formation, une évaluation est réalisée par les participants suivant les objectifs de la formation.</p>
+                <div className={styles.wrapperOne}>
+            <Image className={styles.img} src="/images/inscription2.webp" alt="formateur" width="400px" height="250px" />
+          </div>
 
                 <h3>Évaluation :</h3>
                 <p>A la suite de la formation, les participants sont évalués suivant les objectifs de la formation.
@@ -38,6 +41,7 @@ export default function Registration () {
                 <h3>Et après la formation ?</h3>
                 <p>Nous attachons une grande importance aux bilans pour améliorer les formations et surtout cadrer au mieux vos objectifs.
                 </p>
+
 
                 <p>Plusieurs moments sont accordés au bilan :
                 </p>

@@ -51,7 +51,7 @@ return(
                <li>PACIFIC ENERGY (Fournisseur et stockage d’hydrocarbures)</li>
           </ul>
 
-          <Image  className={styles.img} src="/images/2.webp" alt="un ordinateur" width="1250px" height="330px" load="lazy"/>
+          <Image  className={styles.img} src="/images/2.webp" alt="un ordinateur" width="1250px" height="330px"/>
      </Layout>
      </div>
      )

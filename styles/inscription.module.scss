@@ -2,9 +2,37 @@
 
 
 .wrapper {
-  padding: 1.5rem 17rem;
+  padding: 1.5rem 12rem;
 
   .img {
     border-radius: 5px;
+  }
+}
+
+.wrapperOne {
+  float: right;
+
+  .img {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width :1334px) {
+  .wrapper {
+    padding: 1.5rem 10rem;
+  }
+}
+
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // reduction taille header ******************
+
+  {
+  .wrapper {
+    padding: 1.5rem 4rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .wrapper {
+    padding: 1.5rem 2rem;
   }
 }

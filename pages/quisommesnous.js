@@ -19,7 +19,7 @@ export default function whoWeAre () {
                          Cette expérience de 38 ans dans les domaines de l'Instrumentation, la Régulation et les ATmosphères EXplosives (ATEX) est mise à profit dans mes formations.
                          </p>
           <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/quisommesnous4.webp" alt="formateur" width="400px" height="300px" load="lazy"/>
+            <Image className={styles.img} src="/images/quisommesnous4.webp" alt="formateur" width="400px" height="300px" />
           </div>
                          <p >
                          <h3>Ma valeur ajoutée :</h3> </p>
@@ -34,7 +34,7 @@ export default function whoWeAre () {
                          </p>
                          <div className={styles.div}>
           <div className={styles.wrapperLeft}>
-            <Image className={styles.img} src="/images/quisommesnous2.webp" alt="un ordinateur" width="400px" height="250px" load="lazy"/>
+            <Image className={styles.img} src="/images/quisommesnous2.webp" alt="un ordinateur" width="400px" height="250px" />
           </div>
                          <h3>Pourquoi des formations modulaires à distances ?</h3>
                          <ul>
