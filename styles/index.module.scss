@@ -35,6 +35,12 @@
       }
     }
 
+    div:hover {
+
+      transform: scale(1.03);
+
+    }
+
 
     a {
       cursor: pointer;
@@ -67,6 +73,8 @@
   padding: 0.7rem;
 }
 
+
+
 @media (max-width :1334px) {
   #clocktitle {
     padding-bottom: 0.3rem;
@@ -94,7 +102,7 @@
 
 .wrapper {
   float: right;
-  padding: 0rem 0.1rem 0.1rem 0.6rem;
+  padding: 2rem 0.1rem 0.5rem 1rem;
 }
 
 .sectionFormations {
@@ -216,4 +224,6 @@
   #clockIcon {
     padding: 0.7rem;
   }
+
+
 }

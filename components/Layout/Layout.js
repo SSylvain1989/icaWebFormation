@@ -20,7 +20,7 @@ export default function Layout({ children, page }) {
       <Head>
         <title>{page}</title>
         {/* donc pour bien comprendre quand je serais sur la page "à propos" le titre de l'onglet sera "à propos" grace à la props "page" */}
-        <meta name="description" content="ICA Web Formation vous forme sur toute la partie instrumentation , Atex ou encore régulation , et tout ça en ligne"/>
+        <meta name="description" content="ICA Web Formation vous forme sur toute la partie instrumentation , contrôle-commande ou directive Atex , et tout ça en ligne avec un formateur de plus de 30 ans d'expérience reconnu et agréé "/>
         {/* c'est ici qu'on mettra nos balise meta pour le SEO / référencement naturel */}
 
       </Head>
@@ -108,7 +108,7 @@ export default function Layout({ children, page }) {
             </a>
           </Link>
             </li>
-            <Link href="/mentionslegales">
+            <Link href="/mentions">
             <a className={styles.map__link}>
               Mentions légales
             </a>

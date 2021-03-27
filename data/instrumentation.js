@@ -6,6 +6,9 @@ const instrumentation = [
   ['Initiation à la métrologie','Adaptée','Adaptée','Préconisée', '2 jours (15h)','5 x 3h',<div><a href="./pdf/initiation metrologie.pdf" target='_blank' title="Voir le PDF">🔍</a><a href="./pdf/initiation metrologie.pdf" download="Initiation à la métrologie-ICA Web Formation" title="Télécharger le PDF">📥</a></div>],
   ['Optimisation des mesures','Adaptée','Adaptée','Inadaptée', '3 jours (22h30)','12 x 3h + 1 x 1h30',<div><a href="./pdf/Optimisation des mesures.pdf" target='_blank' title="Voir le PDF">🔍</a><a href="./pdf/Optimisation des mesures.pdf" download="Optimisation des mesures-ICA Web Formation" title="Télécharger le PDF">📥</a></div>],
   ['Mécanique des fluides (dont les pertes de charge)','Adaptée','Adaptée','Adaptée', '2 jours (15h)','5 x 3h',<div><a href="./pdf/mecanique fluides.pdf" target='_blank' title="Voir le PDF">🔍</a><a href="./pdf/mecanique fluides.pdf" download="Mécanique des fluides-ICA Web Formation" title="Télécharger le PDF">📥</a></div>],
+  ['Choix des vannes de régulation','Adaptée','Inadaptée','Inadaptée', '2 jours (15h)','5 x 3h',<div><a href="./pdf/Choix des vannes.pdf" target='_blank' title="Voir le PDF">🔍</a><a href="./pdf/Choix des vannes.pdf" download="Choix des vannes de régulation" title="Télécharger le PDF">📥</a></div>],
+  ['Diagnostic des vannes de régulation','Inadaptée','Adaptée','Inadaptée', '2 jours (15h)','5 x 3h',<div><a href="./pdf/Diagnostic des vannes.pdf" target='_blank' title="Voir le PDF">🔍</a><a href="./pdf/Diagnostic des vannes.pdf" download="Diagnostic des vannes de régulation" title="Télécharger le PDF">📥</a></div>],
+
 ];
 
 export default instrumentation;

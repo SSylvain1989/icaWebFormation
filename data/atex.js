@@ -13,3 +13,4 @@ const atex = [
 
 export default atex;
 
+// rel="nofollow"

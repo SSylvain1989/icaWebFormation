@@ -14,7 +14,7 @@ export default function Registration () {
       <Layout page='ICA - Inscriptions formations'>
 
           <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/schema.webp" alt="formateur" width="800px" height="150px" load="lazy"/>
+            <Image className={styles.img} src="/images/schema.png" alt="formateur" width="700px" height="130px" load="lazy"/>
           </div>
 
       <h3>Inscriptions :</h3>
