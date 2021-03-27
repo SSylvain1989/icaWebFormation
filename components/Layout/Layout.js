@@ -97,7 +97,7 @@ export default function Layout({ children, page }) {
             <p className={styles.about__text}>SIRET 878 135 896 00016</p>
             <p className={styles.about__text}>Déclaration d'activité 93840418984 </p>
             <a href="tel:+33644073309" className={styles.about__text}></a>
-            <a href="mailto:contact@icawebformation.com" className={styles.about__text} alt="email"><span className={styles.srOnly}>contact@icawebformation.com</span>contact@icawebformation.com</a>
+            <a className={styles.about__text} href="mailto:contact@icawebformation.com"  label="email" alt="email"><span className={styles.srOnly}>contact@icawebformation.com</span>contact@icawebformation.com</a>
           </div>
           {/* div footer_map */}
           <ul className={styles.map}>
@@ -108,11 +108,13 @@ export default function Layout({ children, page }) {
             </a>
           </Link>
             </li>
+            <li>
             <Link href="/mentions">
             <a className={styles.map__link}>
               Mentions légales
             </a>
           </Link>
+          </li>
           </ul>
 
           <ul className={styles.map}>
