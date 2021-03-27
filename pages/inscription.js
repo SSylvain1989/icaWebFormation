@@ -5,16 +5,13 @@ import Image from "next/image";
 import Layout from "../components/Layout/Layout.js";
 import styles from "../styles/inscription.module.scss";
 
-// import schema from "../public/images/schema.jpeg";
-
-
 export default function Registration () {
   return(
     <div>
       <Layout page='ICA - Inscriptions formations'>
 
           <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/schema.png" alt="formateur" width="810px" height="135px" />
+            <Image className={styles.img} src="/images/schema.png" alt="schema pedagogie" width="810px" height="135px" />
           </div>
 
       <h3>Inscriptions :</h3>
@@ -27,7 +24,7 @@ export default function Registration () {
                 Le formateur s'adapte au niveau des participants et répond à toutes les questions.
                 En fin de formation, une évaluation est réalisée par les participants suivant les objectifs de la formation.</p>
                 <div className={styles.wrapperOne}>
-            <Image className={styles.img} src="/images/inscription2.webp" alt="formateur" width="400px" height="250px" />
+            <Image className={styles.img} src="/images/inscription2.webp" alt="vannes d'industrie" width="400px" height="250px" />
           </div>
 
                 <h3>Évaluation :</h3>

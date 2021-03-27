@@ -4,9 +4,17 @@
   border-radius: 5px;
 }
 
+
+.ol {
+  margin-left: 2rem;
+  list-style: none;
+
+}
+
 .description {
   height: fit-content;
   padding-bottom: 1rem;
+
 
   &__header {
     padding-top: 1rem;

@@ -34,7 +34,7 @@ export default function whoWeAre () {
                          </p>
                          <div className={styles.div}>
           <div className={styles.wrapperLeft}>
-            <Image className={styles.img} src="/images/quisommesnous2.webp" alt="un ordinateur" width="400px" height="250px" />
+            <Image className={styles.img} src="/images/quisommesnous2.webp" alt="une usine avec des vannes" width="400px" height="250px" />
           </div>
                          <h3>Pourquoi des formations modulaires à distances ?</h3>
                          <ul>

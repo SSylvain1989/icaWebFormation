@@ -2,9 +2,8 @@
 // ça évite la confusion si plusieurs composants à la suite , par contre fini les fléchées.
 
 import {useState } from "react";
-import { FaTv, FaLeanpub, FaRegClock, FaLaptop } from "react-icons/fa";
+import {  FaRegClock } from "react-icons/fa";
 import { BiUserCheck } from "react-icons/bi";
-import { CgScreen } from "react-icons/cg";
 import {IoIosLaptop }  from "react-icons/io"
 import Image from "next/image";
 import instrumentation from '../data/instrumentation.js';
@@ -84,7 +83,7 @@ export default function Home () {
             
           </div>
           <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/home.webp" alt="un ordinateur" width="450px" height="280px"/>
+            <Image className={styles.img} src="/images/home.webp" alt="usine" width="450px" height="280px"/>
           </div>
           <h2>Formations dédiées à l'instrumentation, au contrôle-commande et aux directives ATEX</h2>
           <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
@@ -113,19 +112,19 @@ export default function Home () {
           </div>
               <Formations data={data} typeFormation={typeFormation}/>
               <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/home2.webp" alt="un ordinateur" width="550px" height="310px"/>
+            <Image className={styles.img} src="/images/home2.webp" alt="usine" width="550px" height="310px"/>
           </div>
               <h3 id="advantages" className={styles.advantages}>Quels sont les avantages de nos formations à distance ? </h3>
               <ul>
                   <li>Des formations avec un expert reconnu.	</li>
                   <li>Des formations adaptées à votre rythme :	</li>
-              <ul>
-                <ol>
+              </ul>
+                <ol className={styles.ol}>
                   <li>Des horaires adaptés voir modifiables.</li>
                   <li>Peu de temps pris pour la formation dans la journée, en général 3 h.</li>
                   <li>Les réponses aux questions sont immédiates et interactives.</li>
                   </ol>
-              </ul>
+              <ul>
                   <li>Un formateur "présent" qui répond à toutes les questions.</li>
                   <li>Des participants qui échangent entre eux.	</li>
                   <li>Des exercices issus de cas concrets pour une bonne adaptabilité des formations.</li>
