@@ -8,7 +8,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import {useRouter} from "next/router";
-import Image from "next/image";
 import styles from '../../styles/layout.module.scss';
 
 
@@ -31,7 +30,7 @@ export default function Layout({ children, page }) {
             <Link href="/">
               <div className={styles.header__logo__title}>
               <a id={styles.logolink} href="/">
-                  <Image className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80"  />
+                  <img className={styles.logo} src="/images/ica-logo.png" alt="ica-logo" width="100" height="80"  />
                   <h1 >ICA WebFormation</h1>
               </a>
               </div>
