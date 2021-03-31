@@ -25,12 +25,9 @@ export default function Home () {
 
   return(
     <div >
-      <Layout page='ICA - Web Formation'>
+      <Layout page='ICA - Formations ATEX INSTRUMENTATION REGULATION en ligne'>
         <div className={styles.description}>
           <div className={styles.description__header} data-aos="fade-up">
-            
-
-
               <div className={styles.description__icon}>
                 <ScrollLink
                 to="advantages"            

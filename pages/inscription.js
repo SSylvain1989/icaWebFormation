@@ -7,7 +7,9 @@ import styles from "../styles/inscription.module.scss";
 
 export default function Registration () {
   return(
+    <> 
     <div>
+
       <Layout page='ICA - Inscriptions formations'>
 
           <div className={styles.wrapper}>
@@ -52,5 +54,6 @@ export default function Registration () {
 
       </Layout>
     </div>
+    </>
   )
 }
