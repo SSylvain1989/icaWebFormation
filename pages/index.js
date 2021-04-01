@@ -80,7 +80,7 @@ export default function Home () {
             
           </div>
           <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/home.webp" alt="usine" width="450px" height="280px"/>
+            <Image className={styles.img} src="/images/home.webp" alt="usine" width="410px" height="290px"/>
           </div>
           <h2>Formations dédiées à l'instrumentation, au contrôle-commande et aux directives ATEX</h2>
           <p>Ces formations peuvent aussi être dispensées par demi-journée ou journée.</p>
@@ -109,7 +109,7 @@ export default function Home () {
           </div>
               <Formations data={data} typeFormation={typeFormation}/>
               <div className={styles.wrapper}>
-            <Image className={styles.img} src="/images/home2.webp" alt="usine" width="550px" height="310px"/>
+            <Image className={styles.img} src="/images/home2.webp" alt="usine" width="500px" height="310px"/>
           </div>
               <h3 id="advantages" className={styles.advantages}>Quels sont les avantages de nos formations à distance ? </h3>
               <ul>
